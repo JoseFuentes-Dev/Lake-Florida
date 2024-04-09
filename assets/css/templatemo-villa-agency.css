@@ -1574,9 +1574,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .header-area .main-nav .logo img {
-    width: 80px;
-  }
+  
+ 
   .best-deal .tabs-content .nav-link {
     font-size: 14px;
     padding: 0px 15px;
@@ -1599,18 +1598,12 @@ body {
 }
 
 @media (max-width: 992px) {
-  .sub-header {
-    display: none;
-  }
   .header-area .main-nav .logo img {
-    width: 185px;
+    width: 223px;
    }
   .background-header .main-nav .logo img {
     width: 154px;
   }
-  
-   
-  
   
   .header-area .main-nav .nav li a {
     padding-left: 3px;

@@ -132,6 +132,12 @@
     
     /*responsive*/
     @media (max-width: 767px) {
+      .header-area .main-nav .logo img {
+        width: 185px;
+       }
+      .background-header .main-nav .logo img {
+        width: 154px;
+      }
     .controls {
       display: none;
     }
