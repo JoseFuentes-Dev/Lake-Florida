@@ -827,7 +827,7 @@ Video Style
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding: 100px 0px 180px 0px;
+  padding: 100px 0px 100px 0px;
   position: relative;
 }
 
@@ -1491,6 +1491,10 @@ body {
 }
 
 @media (max-width: 992px) {
+  .video h2 {
+    font-size: 60px;
+    
+  }
   .header-area .main-nav .logo img {
     width: 223px;
    }
@@ -1579,6 +1583,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .video h2 {
+    font-size: 60px;
+    
+  }
   .best-deal .info-table ul li span {
     float: none;
     width: 100%;
