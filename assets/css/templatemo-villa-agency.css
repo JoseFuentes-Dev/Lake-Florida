@@ -410,11 +410,11 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
- width: 190px;
+ width: 223px;
 }
 
 .background-header .main-nav .logo img {
-  width: 150px;
+  width: 153px;
 }
 
 .header-area .main-nav ul.nav {
@@ -667,9 +667,7 @@ Header Style
   .header-area .logo {
     margin-left: 0px;
   }
-  .logo img{
-    width: 100px;
-  }
+
   .header-area .menu-trigger {
     display: block !important;
   }
