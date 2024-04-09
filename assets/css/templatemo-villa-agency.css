@@ -634,6 +634,7 @@ Header Style
   .background-header .main-nav .logo {
     top: 0px;
   }
+  
   .background-header .main-nav .border-button {
     top: 0px !important;
   }
@@ -1601,10 +1602,15 @@ body {
   .sub-header {
     display: none;
   }
-  
+  .header-area .main-nav .logo img {
+    width: 185px;
+   }
   .background-header .main-nav .logo img {
-    width: 80px;
+    width: 154px;
   }
+  
+   
+  
   
   .header-area .main-nav .nav li a {
     padding-left: 3px;
