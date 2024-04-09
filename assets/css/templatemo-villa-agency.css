@@ -151,7 +151,7 @@ body {
 }
 
 .section-heading h6 {
-  color: #ee626b;
+  color: #40a4f9;
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -717,15 +717,15 @@ Featured Style
 --------------------------------------------- 
 */
 
-.featured .left-image {
+.pool .left-image {
   position: relative;
 }
 
-.featured .left-image img {
+.pool .left-image img {
   padding-left: 55px;
 }
 
-.featured .left-image a {
+.pool .left-image a {
   display: inline-block;
   width: 110px;
   height: 110px;
@@ -738,17 +738,17 @@ Featured Style
   bottom: -55px;
 }
 
-.featured .section-heading {
+.pool .section-heading {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 60px;
 }
 
-.featured .section-heading h2 {
+.pool .section-heading h2 {
   width: 70%;
 }
 
-.featured .accordion {
+.pool .accordion {
   margin-left: 10px;
   margin-right: 10px;
   --bs-accordion-border-radius: 10px;
@@ -758,68 +758,73 @@ Featured Style
   border: none !important;
 }
 
-.featured .accordion-header {
+.pool .accordion-header {
   border-bottom: 1px solid #eaeaea;
 }
 
-.featured .accordion-button {
+.pool .accordion-button {
   box-shadow: none;
   font-size: 17px;
   font-weight: 500;
   color: #1e1e1e;
 }
 
-.featured .accordion-button:not(.collapsed) {
+.pool .accordion-button:not(.collapsed) {
   color: #40a4f9;
   background-color: #fafafa;
   outline: none;
 }
 
-.featured .accordion-button::after {
+.pool .accordion-button::after {
   display: none;
 }
 
-.featured #headingThree {
+.pool #headingThree {
   border-bottom: none;
 }
 
-.featured .accordion-item:last-of-type .accordion-collapse {
+.pool .accordion-item:last-of-type .accordion-collapse {
   border-top: 1px solid #eaeaea;
 }
 
-.featured .info-table {
+.pool .info-table {
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 35px 30px;
 }
 
-.featured .info-table ul li {
+.pool .info-table ul li {
   display: block;
   margin-bottom: 35px;
   padding-bottom: 35px;
   border-bottom: 1px solid #eee;
 }
 
-.featured .info-table ul li:last-child {
+.pool .info-table ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.featured .info-table ul li img {
+.pool .info-table ul li img {
   float: left;
   margin-right: 25px;
 }
 
-.featured .info-table ul li h4 {
+.pool .info-table ul li h4 {
   font-size: 22px;
   font-weight: 600;
 }
 
-.featured .info-table ul li h4 span {
-  font-size: 15px;
+.pool .info-table ul li h4 span {
+  
+  font-size: 13px;
   color: #aaa;
   font-weight: 400;
+}
+.pool .info-table ul li h4 .span1 {
+  
+  margin-left: 60px;
 }
 
 /* 
@@ -1615,16 +1620,16 @@ body {
   .main-banner .item h2 {
     width: 100%;
   }
-  .featured .section-heading {
+  .pool .section-heading {
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 100px;
   }
-  .featured .accordion {
+  .pool .accordion {
     margin-left: 0px;
     margin-right: 0px;
   }
-  .featured .info-table {
+  .pool .info-table {
     margin-top: 45px;
   }
   .fun-facts .counter {
