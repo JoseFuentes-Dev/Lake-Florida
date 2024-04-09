@@ -11,9 +11,9 @@
 
 
 	$(window).scroll(function() {
-	  var scroll = $(window).scrollTop();
-	  var box = $('.home').height();
-	  var header = $('header').height();
+	  let scroll = $(window).scrollTop();
+	  let box = $('.home').height();
+	  let header = $('header').height();
 
 	  if (scroll >= box - header) {
 	    $("header").addClass("background-header");
@@ -24,7 +24,7 @@
 
 	
 
-	var width = $(window).width();
+	let width = $(window).width();
 		$(window).resize(function() {
 		if (width > 767 && $(window).width() < 767) {
 			location.reload();
@@ -34,28 +34,7 @@
 		}
 	})
 
-	const elem = document.querySelector('.properties-box');
-	const filtersElem = document.querySelector('.properties-filter');
-	if (elem) {
-		const rdn_events_list = new Isotope(elem, {
-			itemSelector: '.properties-items',
-			layoutMode: 'masonry'
-		});
-		if (filtersElem) {
-			filtersElem.addEventListener('click', function(event) {
-				if (!matchesSelector(event.target, 'a')) {
-					return;
-				}
-				const filterValue = event.target.getAttribute('data-filter');
-				rdn_events_list.arrange({
-					filter: filterValue
-				});
-				filtersElem.querySelector('.is_active').classList.remove('is_active');
-				event.target.classList.add('is_active');
-				event.preventDefault();
-			});
-		}
-	}
+	
 
 
 	// Menu Dropdown Toggle
@@ -70,10 +49,10 @@
 	// Menu elevator animation
 	$('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
+			let target = $(this.hash);
 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 			if (target.length) {
-				var width = $(window).width();
+				let width = $(window).width();
 				if(width < 991) {
 					$('.menu-trigger').removeClass('active');
 					$('.header-area .nav').slideUp(200);	
@@ -108,3 +87,38 @@
 
 
 })(window.jQuery);
+
+
+
+
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+
+    // Obtener todos los divs con un id
+    var divs = document.querySelectorAll('[id]');
+
+    var activeLink = document.querySelector('a.active');
+    
+    // Iterar sobre cada div para verificar si está en la pantalla
+    divs.forEach(function(div) {
+        var divTop = div.offsetTop;
+        var divHeight = div.clientHeight;
+        var id = div.getAttribute('id');
+
+        if (scrollPosition >= divTop && scrollPosition < divTop + divHeight) {
+            // Si el div está en la pantalla, agregar la clase "active" al enlace correspondiente
+            var navLink = document.querySelector('a[href="#' + id + '"]');
+            if (navLink && !navLink.classList.contains('active')) {
+                // Eliminar la clase active del enlace anterior si existe
+                if (activeLink) {
+                    activeLink.classList.remove('active');
+                }
+                navLink.classList.add('active');
+                activeLink = navLink;
+            }
+        }
+    });
+});
+
+
+  

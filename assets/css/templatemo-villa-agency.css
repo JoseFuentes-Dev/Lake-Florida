@@ -713,9 +713,10 @@ Banner Style
 
 /* 
 ---------------------------------------------
-Featured Style
+Pool Style
 --------------------------------------------- 
 */
+
 
 .pool .left-image {
   position: relative;
@@ -1283,79 +1284,6 @@ Page Header Style
 
 
 /* 
----------------------------------------------
-Properties Style
---------------------------------------------- 
-*/
-
-.properties ul.properties-filter {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.properties ul.properties-filter li {
-  display: inline-block;
-  margin: 5px 8px;
-}
-
-.properties ul.properties-filter li a {
-  display: inline-block;
-  text-align: center;
-  font-size: 15px;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #fff;
-  background-color: #1e1e1e;
-  padding: 12px 25px;
-  border-radius: 5px;
-  transition: all .3s;
-}
-
-.properties ul.properties-filter li a.is_active {
-  background-color: #40a4f9;
-  color: #fff;
-}
-
-.properties ul.properties-filter li a.is_active:hover {
-  color: #fff;
-}
-
-.properties ul.properties-filter li a:hover {
-  color: #40a4f9;
-}
-
-.properties ul.pagination {
-  margin-top: 50px;
-  text-align: center;
-  width: 100%;
-  display: inline-block;
-}
-
-.properties ul.pagination li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-.properties ul.pagination li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  background-color: #1e1e1e;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 50%;
-  transition: all .3s;
-}
-
-.properties ul.pagination li a:hover,
-.properties ul.pagination li a.is_active {
-  background-color: #40a4f9;
-  color: #fff;
-}
 
 
 /* 
@@ -1590,13 +1518,7 @@ body {
   .best-deal .tabs-content ul.nav-tabs li {
     margin: 0px 5px;
   }
-  .properties ul.properties-filter li a {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-  .properties ul.properties-filter li {
-    margin: 5px;
-  }
+  
   .header-area .main-nav .nav li:last-child {
     display: none;
   }
