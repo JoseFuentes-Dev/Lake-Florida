@@ -55,32 +55,11 @@
     animation: captionText 0.5s ease forwards;
     animation-delay: 1s;
     }
-    .home .caption p {
-    width: 300px;
-    padding: 20px;
-    color: #000;
-    font-size: 18px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    }
-    .home .slide.active .caption p {
-    opacity: 0;
-    animation: captionText 0.5s ease forwards;
-    animation-delay: 1.2s;
-    }
-    .home .caption a {
-    display: inline-block;
-    padding: 10px 30px;
-    background-color: #003b5c;
-    text-decoration: none;
-    color: #ffffff;
-    }
+    
     .home .caption span{
-      color: #40a4f9;
+      color: #ffb201;
     }
-    .home .caption a:hover {
-    background-color: #007681;
-    }
+    
     
     .home .slide.active .caption a {
     opacity: 0;
@@ -116,7 +95,7 @@
     }
     .home .controls .prev:hover,
     .home .controls .next:hover {
-    background-color: #40a4f9;
+    background-color: #ffb201;
     border-radius: 15px;
     }
     .home .controls .prev {
@@ -148,7 +127,7 @@
     }
     
     .home .indicator div.active {
-      background-color: #40a4f9;
+      background-color: #ffb201;
     }
     
     /*responsive*/

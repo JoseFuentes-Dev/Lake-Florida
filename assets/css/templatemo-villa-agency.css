@@ -317,7 +317,7 @@ Header Style
 */
 
 .sub-header {
-  background-color: #fff;
+  background-color: #ffb201;
   padding: 10px 0px;
   border-bottom: 1px solid #eee;
 }
@@ -353,7 +353,7 @@ Header Style
 
 .sub-header ul.info li {
   font-size: 14px;
-  color: #7a7a7a;
+  color: #000;
   border-right: 1px solid #eee;
   margin-right: 25px;
   padding-right: 25px;
