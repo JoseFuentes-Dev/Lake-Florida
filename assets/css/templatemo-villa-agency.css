@@ -789,16 +789,17 @@ Pool Style
 }
 
 .pool .info-table {
+  text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
+  padding: 15px 10px;
 }
 
 .pool .info-table ul li {
   display: block;
-  margin-bottom: 35px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eee;
 }
 
 .pool .info-table ul li:last-child {
@@ -807,26 +808,12 @@ Pool Style
   margin-bottom: 0;
 }
 
-.pool .info-table ul li img {
-  float: left;
-  margin-right: 25px;
-}
 
 .pool .info-table ul li h4 {
   font-size: 22px;
   font-weight: 600;
 }
 
-.pool .info-table ul li h4 span {
-  
-  font-size: 13px;
-  color: #aaa;
-  font-weight: 400;
-}
-.pool .info-table ul li h4 .span1 {
-  
-  margin-left: 60px;
-}
 
 /* 
 ---------------------------------------------
