@@ -822,11 +822,12 @@ Video Style
 */
 
 .video {
-  background-image: url(../images/video-bg.jpg);
+  background-image: url(../images/piscinas/agua\ piscina.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0px 250px 0px;
+  background-attachment: fixed;
+  padding: 100px 0px 180px 0px;
   position: relative;
 }
 
@@ -834,36 +835,15 @@ Video Style
   margin-top: -240px;
 }
 
-.video .section-heading h2 {
-  color: #fff;
-}
-
-.video-content .video-frame {
-  position: relative;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
-
-.video-content .video-frame img {
-  border-radius: 10px;
-}
-
-.video-content .video-frame a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-26px, -26px);
-  width: 52px;
-  height: 52px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
+.video h2 {
   text-align: center;
-  line-height: 52px;
-  color: #40a4f9;
-  outline: 15px solid rgba(254, 85, 37, 0.5);
-  font-size: 18px;
+  font-size: 100px;
+  color: #ffb201;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 /* 
 ---------------------------------------------
@@ -878,43 +858,37 @@ Fun Facts Style
 
 .fun-facts .counter {
   background-color: #ffeee9;
+  padding: 10px;
   position: relative;
   border-radius: 10px;
-  width: 270px;
-  padding: 20px 0px;
+  width: 260px;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
   display: inline-block;
+  
+}
+.fun-facts .counter img{
+  width: 70px
+
 }
 
-.fun-facts .counter h2,
+
+
+.fun-facts .counter,
 .fun-facts .counter p {
   display: inline-flex;
   vertical-align: middle;
 }
 
 .fun-facts .counter p {
-  text-align: left;
-  font-size: 16px;
+  font-size: 13px;
   color: #1e1e1e;
   font-weight: 600;
-  line-height: 28px;
 }
 
-.fun-facts .counter h2 {
-  margin-right: 25px;
-  font-size: 40px;
-  color: #40a4f9;
-}
 
-.fun-facts .counter:after {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #40a4f9;
-  border-radius: 50%;
-  content: '';
-  right: -25px;
-  top: -25px;
-}
+
 
 
 /* 
@@ -1495,7 +1469,12 @@ body {
 
 @media (max-width: 767px) {
   
- 
+  .video h2 {
+   
+    font-size: 60px;
+    
+  }
+  
   .best-deal .tabs-content .nav-link {
     font-size: 14px;
     padding: 0px 15px;
