@@ -817,24 +817,23 @@ Pool Style
 
 /* 
 ---------------------------------------------
-Video Style
+image-fixed Style
 --------------------------------------------- 
 */
 
-.video {
-  background-image: url(../images/piscinas/agua\ piscina.jpg);
-  background-repeat: no-repeat;
+.image-fixed {
+  background-image: url(../images/piscinas/victor-curty-ntWIit8W7p0-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
   padding: 100px 0px 100px 0px;
   position: relative;
 }
 
-.video-content {
+.image-fixed-content {
   margin-top: -240px;
 }
 
-.video h2 {
+.image-fixed h2 {
   text-align: center;
   font-size: 100px;
   color: #ffb201;
@@ -1468,7 +1467,7 @@ body {
 
 @media (max-width: 767px) {
   
-  .video h2 {
+  .image-fixed h2 {
    
     font-size: 60px;
     
@@ -1490,7 +1489,7 @@ body {
 }
 
 @media (max-width: 992px) {
-  .video h2 {
+  .image-fixed h2 {
     font-size: 60px;
     
   }
@@ -1582,7 +1581,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .video h2 {
+  .image-fixed h2 {
     font-size: 60px;
     
   }
