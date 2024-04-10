@@ -831,6 +831,7 @@ image-fixed Style
 .image-fixed {
   background-image: url(../images/piscinas/piscina-image.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 100px 0px 100px 0px;
   position: relative;
