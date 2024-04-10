@@ -150,13 +150,7 @@
  
     }
      @media (max-width: 440px) {
-      .image-fixed {
-        background-image: url(../images/piscinas/agua-piscina.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-       
-      }
-    
+      
     .home .caption h1 {
       font-size: 25px;
     }

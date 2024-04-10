@@ -598,12 +598,7 @@ Header Style
 }
 
 @media (max-width: 767px) {
-  .image-fixed {
-    background-image: url(../images/piscinas/agua-piscina.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-   
-  }
+  
   .background-header .main-nav {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 25px 25px;
