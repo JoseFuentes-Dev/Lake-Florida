@@ -589,6 +589,7 @@ Header Style
 }
 
 @media (max-width: 1200px) {
+
   .header-area .main-nav .nav li {
     padding-left: 5px;
     padding-right: 5px;
@@ -597,6 +598,7 @@ Header Style
 }
 
 @media (max-width: 767px) {
+  
   .background-header .main-nav {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 25px 25px;
@@ -726,18 +728,7 @@ Pool Style
   padding-left: 55px;
 }
 
-.pool .left-image a {
-  display: inline-block;
-  width: 110px;
-  height: 110px;
-  line-height: 110px;
-  background-color: #40a4f9;
-  border-radius: 50%;
-  text-align: center;
-  position: absolute;
-  left: 0;
-  bottom: -55px;
-}
+
 
 .pool .section-heading {
   margin-left: 10px;
@@ -817,24 +808,30 @@ Pool Style
 
 /* 
 ---------------------------------------------
-Video Style
+image-fixed Style
 --------------------------------------------- 
 */
 
+<<<<<<< HEAD
 .video {
   background-image: url(../images/piscinas/piscina-image.jpg);
   background-repeat: no-repeat;
+=======
+.image-fixed {
+  background-image: url(../images/piscinas/piscina-image.jpg);
+>>>>>>> d611590384a0d970bf780c7be971e0af1fde01af
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 100px 0px 100px 0px;
   position: relative;
 }
 
-.video-content {
+.image-fixed-content {
   margin-top: -240px;
 }
 
-.video h2 {
+.image-fixed h2 {
   text-align: center;
   font-size: 100px;
   color: #ffb201;
@@ -1468,7 +1465,8 @@ body {
 
 @media (max-width: 767px) {
   
-  .video h2 {
+  
+  .image-fixed h2 {
    
     font-size: 60px;
     
@@ -1490,7 +1488,8 @@ body {
 }
 
 @media (max-width: 992px) {
-  .video h2 {
+  
+  .image-fixed h2 {
     font-size: 60px;
     
   }
@@ -1582,7 +1581,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .video h2 {
+  .image-fixed h2 {
     font-size: 60px;
     
   }
