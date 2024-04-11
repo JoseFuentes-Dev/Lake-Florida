@@ -812,14 +812,10 @@ image-fixed Style
 --------------------------------------------- 
 */
 
-<<<<<<< HEAD
-.video {
-  background-image: url(../images/piscinas/piscina-image.jpg);
-  background-repeat: no-repeat;
-=======
+
 .image-fixed {
-  background-image: url(../images/piscinas/piscina-image.jpg);
->>>>>>> d611590384a0d970bf780c7be971e0af1fde01af
+  background-image: url(../images/piscinas/Piscina-section/agua-piscina.jpg);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
