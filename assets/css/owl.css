@@ -45,7 +45,7 @@
     
     }
     .home .caption h1 {
-    font-size: 40px;
+    font-size: 45px;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     
@@ -58,6 +58,16 @@
     
     .home .caption span{
       color: #ffb201;
+      
+    }
+    .home .caption .span1-slide{
+      background-color: #3e4849;
+      text-shadow:none;
+    }
+    .home .caption .span2-slide{
+      color:#3e4849;
+      background-color: #ffffff;
+      text-shadow:none;
     }
     
     
