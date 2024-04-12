@@ -1,8 +1,6 @@
 /*
 
-TemplateMo 591 villa agency
-
-https://templatemo.com/tm-591-villa-agency
+Lake Florida Construction LLC
 
 */
 
@@ -12,12 +10,14 @@ Table of contents
 01. font & reset css
 02. reset
 03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
+04. pre-loader styles
+05. header styles
+06. pool styles
+07. image fixed styles
+08. pool-image-fixed
+09. contact styles
+10. footer
+11. responsive
 
 --------------------------------------------- */
 /* 
@@ -157,56 +157,6 @@ body {
   font-weight: 700;
 }
 
-.icon-button a {
-  display: inline-block;
-  background-color: #1e1e1e;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 30px 0px 0px;
-  border-radius: 25px;
-  transition: all .3s;
-}
-
-.icon-button a i {
-  background-color: #40a4f9;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 50px;
-  display: inline-block;
-  margin-right: 15px;
-  margin-left: -1px;
-}
-
-.icon-button a:hover {
-  color: #40a4f9;
-}
-
-.icon-button a:hover i {
-  color: #fff;
-}
-
-.main-button a {
-  display: inline-block;
-  background-color: #1e1e1e;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-  height: 40px;
-  line-height: 40px;
-  padding: 0px 30px;
-  border-radius: 25px;
-  transition: all .3s;
-}
-
-.main-button a:hover {
-  background-color: #40a4f9;
-  color: #fff;
-}
 
 /* 
 ---------------------------------------------
@@ -307,7 +257,6 @@ Pre-loader Style
   background: #40a4f9;
   border-radius: 50%;
 }
-
 
 
 /* 
@@ -707,14 +656,6 @@ Header Style
 
 /* 
 ---------------------------------------------
-Banner Style
---------------------------------------------- 
-*/
-
-
-
-/* 
----------------------------------------------
 Pool Style
 --------------------------------------------- 
 */
@@ -841,16 +782,16 @@ image-fixed Style
 
 /* 
 ---------------------------------------------
-Fun Facts Style
+Pool-Image-Fixed Style
 --------------------------------------------- 
 */
 
-.fun-facts {
+.pool-image-fixed {
   text-align: center;
   margin-top: 125px;
 }
 
-.fun-facts .counter {
+.pool-image-fixed .counter {
   background-color: #ffeee9;
   padding: 10px;
   position: relative;
@@ -862,20 +803,20 @@ Fun Facts Style
   display: inline-block;
   
 }
-.fun-facts .counter img{
+.pool-image-fixed .counter img{
   width: 70px
 
 }
 
 
 
-.fun-facts .counter,
-.fun-facts .counter p {
+.pool-image-fixed .counter,
+.pool-image-fixed .counter p {
   display: inline-flex;
   vertical-align: middle;
 }
 
-.fun-facts .counter p {
+.pool-image-fixed .counter p {
   font-size: 13px;
   color: #1e1e1e;
   font-weight: 600;
@@ -883,58 +824,6 @@ Fun Facts Style
 
 
 
-
-
-/* 
----------------------------------------------
-Best Deal Style
---------------------------------------------- 
-*/
-
-.best-deal {
-  background-color: #fafafa;
-  padding: 100px 0px;
-}
-
-
-
-.best-deal .info-table {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-}
-
-.best-deal .info-table ul li {
-  display: block;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #eee;
-  text-align: left;
-  font-size: 15px;
-  color: #aaa;
-  font-weight: 400;
-}
-
-.best-deal .info-table ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.best-deal .info-table ul li span {
-  font-size: 20px;
-  color: #1e1e1e;
-  font-weight: 700;
-  
-  display: inline-block;
-}
-
-
-
-
-.best-deal .icon-button {
-  margin-top: 30px;
-}
 
 
 
@@ -1051,263 +940,13 @@ Contact Style
   background-color: #40a4f9;
 }
 
-
-
-/* 
----------------------------------------------
-Page Header Style
---------------------------------------------- 
-*/
-
-.page-heading {
-  background-image: url(../images/page-heading-bg.jpg);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 110px 0px;
-  text-align: center;
-}
-
-.page-heading span {
-  background-color: #fff;
-  color: #1e1e1e;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 10px 25px;
-  display: inline-block;
-  margin-bottom: 30px;
-}
-
-.page-heading span a {
-  color: #1e1e1e;
-}
-
-.page-heading h3 {
-  font-size: 48px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-
-/* 
-
-
-/* 
----------------------------------------------
-Single Page Style
---------------------------------------------- 
-*/
-
-.single-property .main-image img {
-  float: none;
-}
-
-.single-property .main-content h4 {
-  font-size: 25px;
-  margin-top: 25px;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid #eee;
-}
-
-.single-property .main-content span.category {
-  background-color: #fbd9cf;
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #1e1e1e;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.single-property .accordion {
-  margin-top: 60px;
-  margin-left: 0px;
-  margin-right: 0px;
-  --bs-accordion-border-radius: 10px;
-  --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
-  --bs-accordion-border-color: none;
-  border: none !important;
-}
-
-.single-property .accordion-header {
-  border-bottom: 1px solid #eaeaea;
-}
-
-.single-property .accordion-button {
-  box-shadow: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #1e1e1e;
-}
-
-.single-property .accordion-button:not(.collapsed) {
-  color: #40a4f9;
-  background-color: #fafafa;
-  outline: none;
-}
-
-.single-property .accordion-button::after {
-  display: none;
-}
-
-.single-property #headingThree {
-  border-bottom: none;
-}
-
-.single-property .accordion-item:last-of-type .accordion-collapse {
-  border-top: 1px solid #eaeaea;
-}
-
-.single-property .info-table {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-  margin-left: 60px;
-}
-
-.single-property .info-table ul li {
-  display: block;
-  margin-bottom: 35px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid #eee;
-}
-
-.single-property .info-table ul li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.single-property .info-table ul li img {
-  float: left;
-  margin-right: 25px;
-}
-
-.single-property .info-table ul li h4 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.single-property .info-table ul li h4 span {
-  font-size: 15px;
-  color: #aaa;
-  font-weight: 400;
-}
-
-
-/* 
----------------------------------------------
-Contact Page Style
---------------------------------------------- 
-*/
-
-
-
-.contact-page .section-heading {
-  margin-bottom: 40px;
-  margin-right: 280px;
-}
-
-.contact-page p {
-  margin-bottom: 50px;
-}
-
-.contact-page .item {
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-  background-color: #fff;
-  display: inline-block;
-  min-width: 360px;
-}
-
-.contact-page .phone {
-  margin-bottom: 30px;
-}
-
-.contact-page .item img {
-  float: left;
-  margin-right: 25px;
-  vertical-align: middle;
-}
-
-.contact-page .item h6 {
-  font-size: 20px;
-  font-weight: 600;
-  vertical-align: middle;
-}
-
-.contact-page .item h6 span {
-  font-size: 15px;
-  color: #aaaaaa;
-  font-weight: 400;
-}
-
-.contact-page #contact-form {
-  margin-left: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-  padding: 35px 30px;
-  background-color: #fff;
-}
-
-.contact-page #contact-form label {
-  font-size: 15px;
-  color: #3a3a3a;
-  margin-bottom: 15px;
-}
-
-.contact-page #contact-form input {
-  width: 100%;
-  height: 44px;
-  border-radius: 22px;
-  background-color: #f6f6f6;
-  border: none;
-  margin-bottom: 30px;
-  font-size: 14px;
-  padding: 0px 15px;
-}
-
-.contact-page #contact-form textarea {
-  width: 100%;
-  height: 150px;
-  max-height: 180px;
-  border-radius: 22px;
-  background-color: #f6f6f6;
-  border: none;
-  margin-bottom: 40px;
-  font-size: 14px;
-  padding: 15px 15px;
-}
-
-.contact-page #contact-form button {
-  background-color: #1e1e1e;
-  height: 44px;
-  border-radius: 22px;
-  padding: 0px 20px;
-  color: #fff;
-  border: none;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all .5s;
-}
-
-.contact-page #contact-form button:hover {
-  background-color: #40a4f9;
-}
-
 /* 
 ---------------------------------------------
 Footer Style
 --------------------------------------------- 
 */
 footer{
-  background-image: url('/assets/images/Footer/wave.jpg');
+  background-image: url('../images/Footer/wave.jpg');
  background-size: cover;
  background-repeat: no-repeat;
 }
@@ -1406,9 +1045,7 @@ body {
   .header-area .main-nav .nav li:last-child a {
     padding-right: 15px;
   }
-  .main-banner .item h2 {
-    width: 100%;
-  }
+  
   .pool .section-heading {
     margin-left: 0px;
     margin-right: 0px;
@@ -1421,20 +1058,14 @@ body {
   .pool .info-table {
     margin-top: 45px;
   }
-  .fun-facts .counter {
+  .pool-image-fixed .counter {
     margin-bottom: 45px;
   }
   .best-deal .section-heading {
     text-align: center;
   }
   
-  .best-deal .info-table {
-    margin-bottom: 45px;
-  }
-  .best-deal .tab-content img {
-    padding: 0px;
-  }
-  
+
   
   .contact-content .phone {
     margin-right: 0px;
@@ -1447,21 +1078,9 @@ body {
   .contact-content #contact-form {
     margin-left: 0px;
   }
-  .single-property .info-table {
-    margin-left: 0px;
-    margin-top: 45px;
-  }
-  .contact-page .section-heading {
-    margin-right: 0px !important;
-  }
-  .contact-page #contact-form {
-    margin-left: 0px;
-    margin-top: 60px;
-  }
-  .best-deal .info-table ul li span {
-    float: right !important;
-    width: auto !important;
-  }
+  
+  
+  
 }
 
 @media (max-width: 1200px) {
@@ -1469,11 +1088,6 @@ body {
     font-size: 60px;
     
   }
-  .best-deal .info-table ul li span {
-    float: none;
-    width: 100%;
-  }
-  .contact-page .section-heading {
-    margin-right: 100px;
-  }
+ 
+  
 }
