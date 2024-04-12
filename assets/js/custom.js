@@ -122,19 +122,45 @@ window.addEventListener('scroll', function() {
 
 
 $(document).ready(function() {
-	// Inicializar el carrusel
-	$('#carouselExampleIndicators').carousel();
+    // Inicializar el carrusel
+    $('#carouselExampleIndicators').carousel();
 
-	// Activar automáticamente el siguiente indicador y cambiar el carrusel cada 8 segundos
-	setInterval(function() {
-		$('#carouselExampleIndicators').carousel('next');
-	}, 8000);
+    // Función para activar automáticamente el siguiente indicador y cambiar el carrusel cada 8 segundos
+    var autoChange = function() {
+        return setInterval(function() {
+            $('#carouselExampleIndicators').carousel('next');
+        }, 8000);
+    };
 
-	// Actualizar los indicadores cuando cambia el carrusel
-	$('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
-		const $activeIndicator = $('.indicators li.active');
-		$activeIndicator.removeClass('active');
-		const index = $('#carouselExampleIndicators .carousel-item.active').index();
-		$('.indicators li').eq(index).addClass('active');
-	});
+    // Inicializar el contador automático
+    var autoChangeInterval = autoChange();
+
+    // Actualizar los indicadores cuando cambia el carrusel
+    $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
+        const $activeIndicator = $('.indicators li.active');
+        $activeIndicator.removeClass('active');
+        const index = $('#carouselExampleIndicators .carousel-item.active').index();
+        $('.indicators li').eq(index).addClass('active');
+    });
+
+    // Realizar el cambio manual al hacer clic en cualquier control del carrusel
+    $('.carousel-control-next, .carousel-control-prev, .indicators li').click(function() {
+        // Detener el cambio automático
+        clearInterval(autoChangeInterval);
+        
+        // Reiniciar el contador automático
+        autoChangeInterval = autoChange();
+
+        // Realizar el cambio manual al elemento anterior o siguiente
+        $('#carouselExampleIndicators').carousel(($(this).hasClass('carousel-control-next') ? 'next' : 'prev'));
+    });
 });
+
+
+
+
+
+
+
+
+
