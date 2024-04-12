@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="assets/css/lake-florida-styles.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+   
 
   </head>
 
@@ -159,9 +161,10 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Pool Dimensions
-                </button>
+                  Pool Dimensions 
+                </button> 
               </h2>
+             
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   Dive into relaxation. We pride ourselves on offering a range of pool sizes to fit every need and space. Whether you're envisioning a cozy backyard oasis or a sprawling aquatic playground, we've got you covered. Our standard sizes include 20x10, 20x12, and 24x12 pools, designed to accommodate various layouts and preferences. Need something unique? No problem. We specialize in crafting custom-sized pools tailored precisely to your specifications. With our commitment to quality and flexibility, your dream pool is closer than you think.</div>
@@ -279,19 +282,73 @@
       </div>
     </div>
   </div>
-  <div class="section best-deal" id="testimonials">
+  <section class="testimonial" id="testimonials">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="section-heading">
-            <h6>| Testimonials</h6>
-            
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  </div>
+        <div class="row">
+          <div class="col-lg-6 d-none d-lg-block">
+             
+                <ol class="carousel-indicators tabs">
+                    <li data-target="#carouselExampleIndicators"class="active">
+                        <figure>
+                            <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-01-179x179.png" class="img-fluid" alt="">
+                        </figure>
+                    </li>
+                    <li data-target="#carouselExampleIndicators">
+                        <figure>
+                            <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-02-306x306.png" class="img-fluid" alt="">
+                        </figure>
+                    </li>
+                    <li data-target="#carouselExampleIndicators">
+                        <figure>
+                            <img src="https://livedemo00.template-help.com/wt_62267_v8/prod-20823-one-service/images/testimonials-03-179x179.png" class="img-fluid" alt="">
+                        </figure>
+                    </li>
+           
+                </ol>
+                
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+                    <h3>WHAT OUR CLIENTS SAY</h3>
+                    <h1>TESTIMONIALS</h1>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="quote-wrapper">
+                                <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                <h3>Emily Johnson</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="quote-wrapper">
+                                <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                <h3>Sophia Williams</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="quote-wrapper">
+                                <p>I have tried a lot of food delivery services but Plate is something out of this world! Their food is really healthy and it tastes great, which is why I recommend this company to all my friends!</p>
+                                <h3>Alexander Smith</h3>
+                            </div>
+                       
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                  </div>
+                  <a class="carousel-control-preview" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                  
+                  <a class="carousel-control-nextt" href="#carouselExampleIndicators" role="button" data-slide="next" >
+                      <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+</section>
  
 
   <div class="contact section" id="contact us">
@@ -420,8 +477,13 @@
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/isotope.min.js"></script>
   <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/testimonial.js"></script>
+  
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
 
   </body>
 </html>

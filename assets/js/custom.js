@@ -121,4 +121,20 @@ window.addEventListener('scroll', function() {
 });
 
 
-  
+$(document).ready(function() {
+	// Inicializar el carrusel
+	$('#carouselExampleIndicators').carousel();
+
+	// Activar automáticamente el siguiente indicador y cambiar el carrusel cada 8 segundos
+	setInterval(function() {
+		$('#carouselExampleIndicators').carousel('next');
+	}, 8000);
+
+	// Actualizar los indicadores cuando cambia el carrusel
+	$('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
+		const $activeIndicator = $('.indicators li.active');
+		$activeIndicator.removeClass('active');
+		const index = $('#carouselExampleIndicators .carousel-item.active').index();
+		$('.indicators li').eq(index).addClass('active');
+	});
+});
