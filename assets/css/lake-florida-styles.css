@@ -996,12 +996,10 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
 }
 .carousel-control-preview{
   left: -30px;
- 
+
   top: 50%;
   transform: translateY(-50%);
-
   padding: 10px;
-  z-index: 1;
 
 }
 .carousel-control-nextt{
