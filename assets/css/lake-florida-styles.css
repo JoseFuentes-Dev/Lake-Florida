@@ -937,7 +937,11 @@ body .testimonial .row .tabs li figure::after {
   transition: 0.2s;
 }
 
-
+body .testimonial .row .tabs.carousel-indicators li.active figure::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 body .testimonial .row .carousel > h3 {
   font-size: 20px;
   line-height: 1.45;
