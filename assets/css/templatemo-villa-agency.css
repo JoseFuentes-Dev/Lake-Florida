@@ -896,40 +896,7 @@ Best Deal Style
   padding: 100px 0px;
 }
 
-.best-deal .tab-content img {
-  padding: 0px 45px;
-}
 
-.best-deal .tabs-content .nav-link {
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #1e1e1e !important;
-  border-radius: 5px;
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  padding: 0px 25px;
-  color: #fff;
-}
-
-.best-deal .tabs-content .nav-tabs .nav-link.active {
-  background-color: #40a4f9 !important;
-  color: #fff;
-}
-
-.best-deal .tabs-content ul.nav-tabs {
-  border-bottom: none !important;
-  margin-bottom: 80px;
-  align-items: end;
-  justify-content: end;
-  margin-top: -130px;
-}
-
-.best-deal .tabs-content ul.nav-tabs li {
-  padding-right: 0px;
-  border-right: none;
-  margin-left: 20px;
-}
 
 .best-deal .info-table {
   border-radius: 10px;
@@ -962,89 +929,14 @@ Best Deal Style
   display: inline-block;
 }
 
-.best-deal .tabs-content {
-  padding: 0px;
-  background-color: transparent;
-}
 
-.best-deal .tabs-content h4 {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
+
 
 .best-deal .icon-button {
   margin-top: 30px;
 }
 
 
-/* 
----------------------------------------------
-Properties Style
---------------------------------------------- 
-*/
-
-.properties .item {
-  background-color: #fafafa;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 30px;
-}
-
-.properties .item img {
-  border-radius: 10px;
-}
-
-.properties .item span.category {
-  background-color: #fbd9cf;
-  font-weight: 500;
-  border-radius: 5px;
-  font-size: 14px;
-  color: #1e1e1e;
-  padding: 5px 12px;
-  display: inline-block;
-  margin-top: 25px;
-}
-
-.properties .item h4 {
-  font-size: 19px;
-  margin: 25px 0px;
-}
-
-.properties .item h4 a {
-  color: #1e1e1e;
-}
-
-.properties .item ul li {
-  display: inline-block;
-  font-size: 15px;
-  color: #4a4a4a;
-  margin-right: 20px;
-}
-
-.properties .item ul li span {
-  font-weight: 600;
-  color: #1e1e1e;
-}
-
-.properties .item ul {
-  border-bottom: 1px solid #eaeaea;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
-}
-
-.properties .item h6 {
-  font-size: 20px;
-  color: #40a4f9;
-  margin-top: 6px;
-  display: inline-block;
-  
-  margin-top: 30px;
-}
-
-.properties .item .main-button {
-  text-align: center;
-}
 
 
 /* 
@@ -1072,10 +964,6 @@ Contact Style
   z-index: 1;
 }
 
-.contact-content #map {
-  border-radius: 10px;
-  margin-bottom: 60px;
-}
 
 .contact-content .item {
   border-radius: 10px;
@@ -1353,9 +1241,7 @@ Contact Page Style
 --------------------------------------------- 
 */
 
-.contact-page #map {
-  margin-top: 100px;
-}
+
 
 .contact-page .section-heading {
   margin-bottom: 40px;
@@ -1470,15 +1356,8 @@ body {
     
   }
   
-  .best-deal .tabs-content .nav-link {
-    font-size: 14px;
-    padding: 0px 15px;
-    height: 44px;
-    line-height: 44px;
-  }
-  .best-deal .tabs-content ul.nav-tabs li {
-    margin: 0px 5px;
-  }
+  
+  
   
   .header-area .main-nav .nav li:last-child {
     display: none;
@@ -1526,30 +1405,15 @@ body {
   .best-deal .section-heading {
     text-align: center;
   }
-  .best-deal .tabs-content ul.nav-tabs {
-    margin-top: 0px;
-    justify-content: center;
-  }
+  
   .best-deal .info-table {
     margin-bottom: 45px;
   }
   .best-deal .tab-content img {
     padding: 0px;
   }
-  .best-deal .tabs-content h4 {
-    margin-top: 45px;
-  }
-  .properties .item h6 {
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .properties .item .main-button {
-    text-align: center;
-  }
-  .properties .item ul li {
-    margin-right: 10px;
-    font-size: 13px;
-  }
+  
+  
   .contact-content .phone {
     margin-right: 0px;
     margin-bottom: 20px;
