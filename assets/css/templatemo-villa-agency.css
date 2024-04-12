@@ -1336,7 +1336,52 @@ Contact Page Style
   background-color: #40a4f9;
 }
 
+/* 
+---------------------------------------------
+Footer Style
+--------------------------------------------- 
+*/
 
+.container-all-footer img{
+margin-bottom: -20rem;
+
+}
+
+.container2{
+  padding: 50px;
+  
+  
+}
+.container3{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.logo-footer,
+.links,
+.follow{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+.logo-footer .title-footer, 
+.links .link-footer,
+.follow .follow-footer{
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.logo-footer a,
+.links a,
+.follow a{
+  color: #fff;
+}
+.container3 a:hover{
+  color: #ffb201;
+}
+.container-copyright{
+  padding-bottom: 20px;
+}
 /* 
 ---------------------------------------------
 Responsive Style
