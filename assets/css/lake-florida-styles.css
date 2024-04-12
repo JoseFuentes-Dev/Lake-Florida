@@ -833,6 +833,7 @@ Testimonials Style
 
 body .testimonial {
   padding: 100px 0;
+  
 }
 body .testimonial .row .tabs {
   all: unset;
@@ -994,16 +995,16 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
     
 
 }
-.carousel-control-preview{
+#carousel-control-preview{
+  color: #40a4f9;
   left: -30px;
-
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
 
 }
 .carousel-control-nextt{
-  position: absolute;
+ 
   top: 50%;
   transform: translateY(-50%);
  right: -5px;
