@@ -358,7 +358,7 @@ Header Style
   margin-right: 25px;
   padding-right: 25px;
 }
-
+.sub-header ul.info li a
 .sub-header ul.info li:last-child {
   margin-right: 0px;
   padding-right: 0px;
@@ -725,6 +725,8 @@ Pool Style
 }
 
 .pool .left-image img {
+  
+  height: 600px;
   padding-left: 55px;
 }
 
@@ -733,7 +735,7 @@ Pool Style
 .pool .section-heading {
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .pool .section-heading h2 {
