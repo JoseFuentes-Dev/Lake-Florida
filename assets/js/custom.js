@@ -121,18 +121,18 @@ window.addEventListener('scroll', function() {
 });
 
 
-$(document).ready(function() {
-    // Inicializar el carrusel
-    $('#carouselExampleIndicators').carousel();
+//Testimonials section
 
+$(document).ready(function() {
     // Función para activar automáticamente el siguiente indicador y cambiar el carrusel cada 8 segundos
     var autoChange = function() {
         return setInterval(function() {
             $('#carouselExampleIndicators').carousel('next');
+            resetTimer();
         }, 8000);
     };
 
-    // Inicializar el contador automático
+    // Inicializar el carrusel y el contador automático
     var autoChangeInterval = autoChange();
 
     // Actualizar los indicadores cuando cambia el carrusel
@@ -141,20 +141,41 @@ $(document).ready(function() {
         $activeIndicator.removeClass('active');
         const index = $('#carouselExampleIndicators .carousel-item.active').index();
         $('.indicators li').eq(index).addClass('active');
+        resetTimer();
+    });
+
+    // Deshabilitar el botón de preview mientras la animación está en curso
+    $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+        $('.carousel-control-preview').prop('disabled', true);
+    });
+
+    // Habilitar el botón de preview cuando la animación ha finalizado
+    $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
+        $('.carousel-control-preview').prop('disabled', false);
     });
 
     // Realizar el cambio manual al hacer clic en cualquier control del carrusel
-    $('.carousel-control-next, .carousel-control-prev, .indicators li').click(function() {
-        // Detener el cambio automático
-        clearInterval(autoChangeInterval);
-        
-        // Reiniciar el contador automático
-        autoChangeInterval = autoChange();
-
+    $('.carousel-control-nextt, .carousel-control-preview, .indicators li').click(function() {
         // Realizar el cambio manual al elemento anterior o siguiente
-        $('#carouselExampleIndicators').carousel(($(this).hasClass('carousel-control-next') ? 'next' : 'prev'));
+        $('#carouselExampleIndicators').carousel(($(this).hasClass('carousel-control-nextt') ? 'next' : 'prev'));
+        resetTimer();
     });
+
+    // Función para reiniciar el temporizador
+    function resetTimer() {
+        clearInterval(autoChangeInterval);
+        autoChangeInterval = autoChange();
+    }
 });
+
+
+
+
+
+
+
+
+
 
 
 
