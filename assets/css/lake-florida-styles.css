@@ -757,7 +757,7 @@ image-fixed Style
 
 
 .image-fixed {
-  background-image: url(../images/piscinas/Piscina-section/agua-piscina.jpg);
+  background-image: url('../images/piscinas/Piscina-section/agua-piscina.jpg');
 
   background-size: cover;
   background-repeat: no-repeat;
