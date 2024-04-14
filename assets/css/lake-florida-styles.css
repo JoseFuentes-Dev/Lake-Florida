@@ -939,6 +939,7 @@ body .testimonial .row .tabs li.active::before {
   background-color: #40a4f9;
   border-radius: 50%;
 }
+
 body .testimonial .row .tabs li.active::after {
   position: absolute;
   content: "";
@@ -947,6 +948,7 @@ body .testimonial .row .tabs li.active::after {
   background-color: #40a4f9;
   border-radius: 50%;
 }
+
 body .testimonial .row .tabs li:nth-child(1) {
   align-self: flex-end;
 }
@@ -1025,6 +1027,12 @@ body .testimonial .row .tabs.carousel-indicators li.active figure::after {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+body .testimonial .row .tabs.carousel-indicators li.active2 figure::after {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 2px solid #40a4f9;
 }
 body .testimonial .row .carousel > h3 {
   font-size: 20px;
