@@ -166,7 +166,114 @@ $(document).ready(function() {
         clearInterval(autoChangeInterval);
         autoChangeInterval = autoChange();
     }
+	
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+	const slider = document.querySelector(".slider-spa");
+	const slides = document.querySelectorAll(".slide-spa");
+	const indicatorsContainer = document.querySelector(".indicators-spa");
+	let currentIndex = 0;
+	let touchStartX = 0;
+	let touchEndX = 0;
+	const threshold = 50; // Umbral para el cambio de imagen
+  
+	function nextSlide() {
+	  currentIndex++;
+	  if (currentIndex >= slides.length) {
+		currentIndex = 0;
+	  }
+	  updateSlide();
+	  updateIndicators();
+	}
+  
+	function prevSlide() {
+	  currentIndex--;
+	  if (currentIndex < 0) {
+		currentIndex = slides.length - 1;
+	  }
+	  updateSlide();
+	  updateIndicators();
+	}
+  
+	function updateSlide() {
+	  const offset = -1 * currentIndex * slider.clientWidth;
+	  slider.style.transform = `translateX(${offset}px)`;
+	}
+  
+	function updateIndicators() {
+	  const indicators = document.querySelectorAll(".indicator-spa");
+	  indicators.forEach((indicator, index) => {
+		if (index === currentIndex) {
+		  indicator.classList.add("active");
+		} else {
+		  indicator.classList.remove("active");
+		}
+	  });
+	}
+  
+	setInterval(nextSlide, 5000); // Cambio de imagen cada 5 segundos
+  
+	// Eventos táctiles
+	slider.addEventListener("touchstart", function(event) {
+	  touchStartX = event.touches[0].clientX;
+	});
+  
+	slider.addEventListener("touchmove", function(event) {
+	  touchEndX = event.touches[0].clientX;
+	});
+  
+	slider.addEventListener("touchend", function(event) {
+	  handleGesture();
+	});
+  
+	// Eventos del mouse
+	slider.addEventListener("mousedown", function(event) {
+	  touchStartX = event.clientX;
+	});
+  
+	slider.addEventListener("mousemove", function(event) {
+	  touchEndX = event.clientX;
+	});
+  
+	slider.addEventListener("mouseup", function(event) {
+	  handleGesture();
+	});
+  
+	function handleGesture() {
+	  const distance = touchEndX - touchStartX;
+	  if (Math.abs(distance) >= threshold) {
+		if (distance > 0) {
+		  prevSlide(); // Deslizar hacia la derecha
+		} else {
+		  nextSlide(); // Deslizar hacia la izquierda
+		}
+	  }
+	  // Resetear las variables de inicio y fin del desplazamiento
+	  touchStartX = 0;
+	  touchEndX = 0;
+	}
+  
+	// Crear indicadores
+	slides.forEach((slide, index) => {
+	  const indicator = document.createElement("div");
+	  indicator.classList.add("indicator-spa");
+	  if (index === 0) {
+		indicator.classList.add("active");
+	  }
+	  indicator.addEventListener("click", () => {
+		currentIndex = index;
+		updateSlide();
+		updateIndicators();
+	  });
+	  indicatorsContainer.appendChild(indicator);
+	});
+  });
+  
+
+
 
 
 

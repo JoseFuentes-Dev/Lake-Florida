@@ -15,10 +15,11 @@ Table of contents
 06. pool styles
 07. image fixed styles
 08. pool-image-fixed
-09. testimonials
-10. contact styles
-11. footer
-12. responsive
+09. spa
+10. testimonials
+11. contact styles
+12. footer
+13. responsive
 
 --------------------------------------------- */
 /* 
@@ -673,7 +674,7 @@ Pool Style
   padding: 20px;
 }
 
-.pool .left-image {
+.left-image {
   position: relative;
 }
 
@@ -685,17 +686,17 @@ Pool Style
 
 
 
-.pool .section-heading {
+.section-heading {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
 }
 
-.pool .section-heading h2 {
+.section-heading h2 {
   width: 70%;
 }
 
-.pool .accordion {
+.accordion {
   margin-left: 10px;
   margin-right: 10px;
   --bs-accordion-border-radius: 10px;
@@ -705,7 +706,7 @@ Pool Style
   border: none !important;
 }
 
-.pool .accordion-header {
+.accordion-header {
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -714,27 +715,25 @@ Pool Style
   font-size: 17px;
   font-weight: 500;
   color: #1e1e1e;
+  outline: none;
 }
 
-.pool .accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {
   color: #40a4f9;
   background-color: #fafafa;
   outline: none;
 }
 
-.pool .accordion-button::after {
-  display: none;
-}
 
-.pool #headingThree {
+#headingThree {
   border-bottom: none;
 }
 
-.pool .accordion-item:last-of-type .accordion-collapse {
+.accordion-item:last-of-type .accordion-collapse {
   border-top: 1px solid #eaeaea;
 }
 
-.pool .info-table {
+.info-table {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -798,6 +797,7 @@ Pool-Image-Fixed Style
 --------------------------------------------- 
 */
 
+
 .pool-image-fixed {
   text-align: center;
   margin-top: 125px;
@@ -833,6 +833,80 @@ Pool-Image-Fixed Style
   color: #1e1e1e;
   font-weight: 600;
 }
+/* 
+---------------------------------------------
+Spa Styles
+--------------------------------------------- 
+*/
+.container-spa{
+  padding: 20px;
+}
+.spa .accordion-button {
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1e1e1e;
+  outline: none;
+}
+.spa .accordion-button:not(.collapsed) {
+  color: #40a4f9;
+  background-color: #fafafa;
+  outline: none;
+}
+.spa .left-image img {
+  
+  height: 500px;
+  
+}
+
+
+
+
+.slider-container-spa {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider-spa {
+  display: flex;
+  transition: transform 0.7s ease; /* Añadir una transición suave al cambiar de imagen */
+}
+
+
+.slide-spa {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.slide-spa img {
+  width: 100%;
+  height: auto;
+}
+
+.indicators-spa {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.indicator-spa {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+}
+
+.indicator-spa.active {
+  background-color: #ffb201;
+}
+
+
+
 
 /* 
 ---------------------------------------------
@@ -1281,8 +1355,19 @@ display: none;
   .pool-image-fixed .counter {
     margin-bottom: 45px;
   }
-  .best-deal .section-heading {
-    text-align: center;
+
+  .spa .section-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .spa .accordion {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .spa-image-fixed .counter {
+    margin-bottom: 45px;
   }
   
 
@@ -1311,3 +1396,7 @@ display: none;
  
   
 }
+
+
+
+
