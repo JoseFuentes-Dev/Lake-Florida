@@ -265,12 +265,14 @@ Pre-loader Style
 Header Style
 --------------------------------------------- 
 */
-
+.container-sub-header{
+padding: 20px 50px 0 50px;
+}
 .sub-header {
   background-color: #ffb201;
-  padding: 10px 0px;
   border-bottom: 1px solid #eee;
 }
+
 
 .sub-header ul li {
   display: inline-block;
@@ -320,7 +322,9 @@ Header Style
   color: #40a4f9;
   margin-right: 8px;
 }
-
+.container-header{
+  padding: 0 40px 0px 40px;
+}
 .background-header {
   background-color: #fff;
   height: 80px!important;
@@ -548,6 +552,9 @@ Header Style
 }
 
 @media (max-width: 767px) {
+  .sub-header{
+    display: none;
+  }
   
   
   .background-header .main-nav {
@@ -662,7 +669,9 @@ Header Style
 Pool Style
 --------------------------------------------- 
 */
-
+.container-pool{
+  padding: 20px;
+}
 
 .pool .left-image {
   position: relative;
@@ -671,7 +680,7 @@ Pool Style
 .pool .left-image img {
   
   height: 650px;
-  padding-left: 55px;
+  
 }
 
 
