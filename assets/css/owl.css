@@ -116,6 +116,7 @@
     }
     
     .home .indicator {
+    
     position: absolute;
     left: 50%;
     bottom: 30px;
@@ -123,11 +124,13 @@
     transform: translateX(-50%);
     cursor: pointer;
     }
+
     
     .home .indicator div {
+      background-color: #ffffff;
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 10px;
+    height: 10px;
     color: #ffffff;
    
     border-radius: 50%;
@@ -135,6 +138,7 @@
     line-height: 25px;
     margin: 0 3px;
     }
+   
     
     .home .indicator div.active {
       background-color: #ffb201;
