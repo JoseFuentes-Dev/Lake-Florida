@@ -1282,10 +1282,10 @@ Responsive Style
 --------------------------------------------- 
 */
 
+@media (max-width: 579px) {
 body {
   overflow-x: hidden;
 }
-@media (max-width: 579px) {
  
  
   .carousel-control-nextt,
