@@ -719,7 +719,7 @@ width: 300px;
   border: none !important;
 }
 
-.accordion-header {
+.pool .accordion-header {
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -731,7 +731,12 @@ width: 300px;
   outline: none;
 }
 
-.accordion-button:not(.collapsed) {
+.dot{
+  font-size: 8px;
+  margin-right: 3px;
+}
+
+.pool .accordion-button:not(.collapsed) {
   color: #40a4f9;
   background-color: #fafafa;
   outline: none;
@@ -742,11 +747,11 @@ width: 300px;
   border-bottom: none;
 }
 
-.accordion-item:last-of-type .accordion-collapse {
+.pool .accordion-item:last-of-type .accordion-collapse {
   border-top: 1px solid #eaeaea;
 }
 
-.info-table {
+.pool .info-table {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
@@ -867,9 +872,10 @@ Spa Styles
   background-color: #fafafa;
   outline: none;
 }
+
 .spa .left-image img {
   
-  height: 600px;
+  height:700px;
   aspect-ratio: 16 / 9;
 }
 
