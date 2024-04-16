@@ -673,6 +673,7 @@ Pool Style
 .container-pool{
   margin-top: 150px;
   padding: 20px;
+  
 }
 .container-pool .row{
   display: flex;
@@ -681,16 +682,18 @@ Pool Style
 }
 .section-pool-right{
 width: 300px;
+
 }
 .left-image {
   position: relative;
 }
 
 .pool .left-image img {
-  
-  height: 650px;
-  
+  height: 650px; /* Altura fija */
+ 
+  aspect-ratio: 16 / 9; /* Establece una relación de aspecto de 16:9 */
 }
+
 
 
 
@@ -864,9 +867,10 @@ Spa Styles
 }
 .spa .left-image img {
   
-  height: 500px;
-  
+  height: 600px;
+  aspect-ratio: 16 / 9;
 }
+
 
 
 
@@ -1308,6 +1312,14 @@ display: none;
     right: 0;
     bottom: 0;
     font-size: 50px;
+}
+.pool .left-image img {
+  height: 300px; /* Altura fija */
+}
+.spa .left-image img {
+  
+  height: 300px;
+  
 }
 }
 @media (max-width: 767px) {
