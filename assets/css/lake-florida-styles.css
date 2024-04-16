@@ -867,6 +867,20 @@ Spa Styles
   color: #1e1e1e;
   outline: none;
 }
+.spa .accordion-button-item{
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1e1e1e;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.spa .accordion-button-item:hover{
+  color: #40a4f9;
+}
+
 .spa .accordion-button:not(.collapsed) {
   color: #40a4f9;
   background-color: #fafafa;
