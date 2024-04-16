@@ -697,7 +697,7 @@ Pool Style
 }
 
 .pool .left-image  {
-background-image: url('/assets/images/piscinas/Piscina-section/1.jpg');
+background-image: url('../images/piscinas/Piscina-section/1.jpg');
 background-position: center;
 background-size: cover;
  aspect-ratio: 9/16;
@@ -710,7 +710,7 @@ background-size: cover;
   flex-direction: column;
 }
 .pool .left-image{
-  background-image: url('/assets/images/piscinas/Piscina-section/2.jpg');
+  background-image: url('../images/piscinas/Piscina-section/2.jpg');
   background-position: bottom;
   background-size: cover;
   height: 400px;
