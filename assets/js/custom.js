@@ -277,7 +277,24 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
   });
   
- 	
+ 
+  $(document).ready(function() {
+    var lastScrollTop = 0;
+    var subHeader = $('#subHeader');
+
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            // Desplazándose hacia abajo
+            subHeader.addClass('hidden');
+        } else {
+            // Desplazándose hacia arriba
+            subHeader.removeClass('hidden');
+        }
+        lastScrollTop = st;
+    });
+});
+
 
 
 
