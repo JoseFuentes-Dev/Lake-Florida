@@ -10,29 +10,34 @@
     });
 
 
-	$(window).scroll(function() {
-	  let scroll = $(window).scrollTop();
-	  let box = $('.home').height();
-	  let header = $('header').height();
-
-	  if (scroll >= box - header) {
-	    $("header").addClass("background-header");
-	  } else {
-	    $("header").removeClass("background-header");
-	  }
-	})
-
-	
-
-	let width = $(window).width();
-		$(window).resize(function() {
-		if (width > 767 && $(window).width() < 767) {
-			location.reload();
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			requestAnimationFrame(function() {
+			  let scroll = $(window).scrollTop();
+		  
+			  if (scroll > 0) {
+				$("header").addClass("background-header");
+			  } else {
+				$("header").removeClass("background-header");
+			  }
+			});
+		  });
+		  
+	  
+		// Función para recargar la página en caso de cambio de ancho de ventana
+		function reloadPageOnResize() {
+		  let width = $(window).width();
+		  $(window).resize(function() {
+			if ((width > 767 && $(window).width() < 767) || (width < 767 && $(window).width() > 767)) {
+			  location.reload();
+			}
+		  });
 		}
-		else if (width < 767 && $(window).width() > 767) {
-			location.reload();
-		}
-	})
+	  
+		// Llamar a la función para recargar la página solo cuando sea necesario
+		reloadPageOnResize();
+	  });
+	  
 
 	
 

@@ -266,6 +266,7 @@ Pre-loader Style
 Header Style
 --------------------------------------------- 
 */
+
 .container-sub-header{
 padding: 20px 50px 0 50px;
 }
@@ -327,7 +328,7 @@ padding: 20px 50px 0 50px;
   padding: 0 40px 0px 40px;
 }
 .background-header {
-  background-color: #fff;
+  
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
@@ -345,7 +346,7 @@ padding: 20px 50px 0 50px;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
   -o-transition: all .5s ease 0s;
-  transition: all .5s ease 0s;
+  transition: all .7s ease 0s;
 }
 
 .header-area .main-nav {
@@ -364,6 +365,7 @@ padding: 20px 50px 0 50px;
 
 .header-area .main-nav .logo img {
  width: 223px;
+ transition: all .6s ease 0s;
 }
 
 .background-header .main-nav .logo img {
@@ -1357,9 +1359,10 @@ display: none;
   }
   .header-area .main-nav .logo img {
     width: 223px;
-   }
+  }
   .background-header .main-nav .logo img {
     width: 154px;
+   
   }
   
   .header-area .main-nav .nav li a {
