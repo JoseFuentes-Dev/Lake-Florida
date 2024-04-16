@@ -714,11 +714,9 @@ background-size: cover;
     flex-direction: column;
   }
 .pool .left-image{
- 
   background-position: bottom;
-  
-  height: 400px;
-  
+  height: 400px; 
+  background-size: contain;
 }
 }
 
@@ -881,10 +879,15 @@ Pool-Image-Fixed Style
 Spa Styles
 --------------------------------------------- 
 */
+
 .container-spa{
-  margin-top: 150px;
+  
   padding: 20px;
+  width: 100%;
+  
 }
+
+
 .spa .accordion-button {
   box-shadow: none;
   font-size: 17px;
@@ -912,61 +915,59 @@ Spa Styles
   outline: none;
 }
 
-.spa .left-image img {
-  
-  height:700px;
-  aspect-ratio: 16 / 9;
+.spa{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-
-
-
-
-.slider-container-spa {
-  overflow: hidden;
-  width: 100%;
+.slider-container {
   position: relative;
+  overflow: hidden;
+  height: 100%;
+  
 }
 
 .slider-spa {
   display: flex;
-  transition: transform 0.7s ease; /* Añadir una transición suave al cambiar de imagen */
+  transition: transform 0.5s ease; /* Transición para el desplazamiento */
+
+  aspect-ratio: 25/25;
+  height: 650px;
+  
 }
 
 
-.slide-spa {
+
+.slider-spa-img {
   flex: 0 0 auto;
   width: 100%;
+  height: 100%; /* Altura de las imágenes */
+  background-size: cover;
+  background-position: center;
+  
 }
 
-.slide-spa img {
-  width: 100%;
-  height: auto;
-}
-
-.indicators-spa {
+.slider-dot-spa {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
 }
 
-.indicator-spa {
+.dot-spa {
   width: 10px;
   height: 10px;
+  background-color: #bbb;
   border-radius: 50%;
-  background-color: #fff;
+  display: inline-block;
   margin: 0 5px;
   cursor: pointer;
 }
 
-.indicator-spa.active {
-  background-color: #ffb201;
+.dot-spa.active {
+  background-color: #333;
 }
-
-
 
 
 /* 
@@ -1346,8 +1347,9 @@ Responsive Style
 body {
   overflow-x: hidden;
 }
- 
- 
+.slider-container .slider-spa{
+  height: 300px;
+}
   .carousel-control-nextt,
   .carousel-control-preview{
 display: none;
@@ -1361,11 +1363,7 @@ display: none;
     font-size: 50px;
 }
 
-.spa .left-image img {
-  
-  height: 300px;
-  
-}
+
 }
 @media (max-width: 767px) {
  
@@ -1378,16 +1376,14 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   text-align: center;
+    text-align: center;
   }
   .image-fixed h2 {
-   
+    
     font-size: 60px;
     
   }
-  
-  
-  
+
   
   .header-area .main-nav .nav li:last-child {
     display: none;
@@ -1431,11 +1427,19 @@ display: none;
   .pool-image-fixed .counter {
     margin-bottom: 45px;
   }
+  .spa{
+    flex-direction: column;
+  }
+ 
+  .slider-spa{
+    aspect-ratio: 16/9;
+    height: 650px;
+  }
 
   .spa .section-heading {
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 100px;
+   
   }
   .spa .accordion {
     margin-left: 0px;
