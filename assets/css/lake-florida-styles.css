@@ -684,28 +684,26 @@ Pool Style
 */
 .container-pool{
   margin-top: 150px;
-  padding: 20px;
-  
-}
-.container-pool .row{
-  display: flex;
+  display: flex; 
   justify-content: center;
-  align-items: center;
+  padding: 30px;
 }
-.section-pool-right{
-width: 300px;
+.pool .section-pool-right{
 
-}
-.left-image {
-  position: relative;
-}
-
-.pool .left-image img {
-  height: 650px; /* Altura fija */
+  aspect-ratio: 9/25;
  
-  aspect-ratio: 16 / 9; /* Establece una relación de aspecto de 16:9 */
+  height: 650px;
+
 }
 
+.pool .left-image  {
+background-image: url('/assets/images/piscinas/Piscina-section/1.jpg');
+background-position: center;
+background-size: cover;
+ aspect-ratio: 9/16;
+ 
+ height: 650px;
+}
 
 
 
@@ -762,10 +760,12 @@ width: 300px;
 }
 
 .pool .info-table {
+  
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
   padding: 15px 10px;
+
 }
 
 .pool .info-table ul li {
