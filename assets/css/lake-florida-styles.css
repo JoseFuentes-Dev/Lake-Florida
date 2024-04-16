@@ -705,7 +705,18 @@ background-size: cover;
  height: 650px;
 }
 
-
+@media (max-width: 992px) {
+.container-pool{
+  flex-direction: column;
+}
+.pool .left-image{
+  background-image: url('/assets/images/piscinas/Piscina-section/2.jpg');
+  background-position: bottom;
+  background-size: cover;
+  height: 400px;
+  
+}
+}
 
 .section-heading {
   margin-left: 10px;
@@ -1345,9 +1356,7 @@ display: none;
     bottom: 0;
     font-size: 50px;
 }
-.pool .left-image img {
-  height: 300px; /* Altura fija */
-}
+
 .spa .left-image img {
   
   height: 300px;
