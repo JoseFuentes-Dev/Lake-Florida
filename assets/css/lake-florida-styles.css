@@ -704,11 +704,15 @@ background-size: cover;
  
  height: 650px;
 }
+.info-pool{
+ width: 100%;
+}
+
 
 @media (max-width: 992px) {
-.container-pool{
-  flex-direction: column;
-}
+  .container-pool{
+    flex-direction: column;
+  }
 .pool .left-image{
   background-image: url('../images/piscinas/Piscina-section/2.jpg');
   background-position: bottom;
