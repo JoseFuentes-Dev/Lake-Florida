@@ -25,7 +25,7 @@ function typeWriter(text, elementId, speed) {
   //redirect seconds
 
   function iniciarContador() {
-    let contador = 1000; // Segundos
+    let contador = 10; // Segundos
   
     const intervalo = setInterval(function() {
       contador--;
