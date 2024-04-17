@@ -958,12 +958,12 @@ Spa Styles
 .dot-spa {
   width: 10px;
   height: 10px;
-  background-color: #bbb;
+  background-color: #fff;
   border-radius: 50%;
   display: inline-block;
   margin: 0 5px;
   cursor: pointer;
-  border: 1px solid #fff;
+  
 }
 
 .dot-spa.active {
