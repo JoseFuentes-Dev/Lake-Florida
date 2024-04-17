@@ -1347,11 +1347,15 @@ Responsive Style
 body {
   overflow-x: hidden;
 }
+.container-pool .left-image{
+ 
+  height: 300px;
+}
 .slider-container .slider-spa{
   height: 300px;
 }
 
-.pool
+
   .carousel-control-nextt,
   .carousel-control-preview{
 display: none;
@@ -1364,6 +1368,7 @@ display: none;
     bottom: 0;
     font-size: 50px;
 }
+
 
 
 }
@@ -1437,8 +1442,9 @@ display: none;
   .slider-spa{
     aspect-ratio: 16/9;
     height: 650px;
+   
   }
-
+  
   .spa .section-heading {
     margin-left: 0px;
     margin-right: 0px;
