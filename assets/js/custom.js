@@ -152,17 +152,25 @@ $(document).ready(function() {
     // Deshabilitar el botón de preview mientras la animación está en curso
     $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
         $('.carousel-control-preview').prop('disabled', true);
+		$('.carousel-control-preview-mobile').prop('disabled', true);
     });
 
     // Habilitar el botón de preview cuando la animación ha finalizado
     $('#carouselExampleIndicators').on('slid.bs.carousel', function (e) {
         $('.carousel-control-preview').prop('disabled', false);
+		$('.carousel-control-preview-mobile').prop('disabled', false);
     });
 
     // Realizar el cambio manual al hacer clic en cualquier control del carrusel
     $('.carousel-control-nextt, .carousel-control-preview, .indicators li').click(function() {
         // Realizar el cambio manual al elemento anterior o siguiente
         $('#carouselExampleIndicators').carousel(($(this).hasClass('carousel-control-nextt') ? 'next' : 'prev'));
+        resetTimer();
+    });
+    
+    // Evitar el desplazamiento hacia abajo al hacer clic en el botón de control-preview-mobile
+    $('.carousel-control-preview-mobile').click(function(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace o botón
         resetTimer();
     });
 
