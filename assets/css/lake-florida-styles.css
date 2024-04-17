@@ -322,19 +322,14 @@ padding: 20px 50px 0 50px;
   background-color: #40a4f9;
 }
 
-.sub-header ul.info li {
+.sub-header ul.info li:first-child {
   font-size: 18px;
   color: #fff;
   border-right: 1px solid #eee;
   margin-right: 25px;
   padding-right: 25px;
 }
-.sub-header ul.info li a
-.sub-header ul.info li:last-child {
-  margin-right: 0px;
-  padding-right: 0px;
-  border-right: none;
-}
+
 
 .sub-header ul.info li i {
   font-size: 25px;
