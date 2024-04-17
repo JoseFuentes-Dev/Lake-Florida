@@ -1,6 +1,24 @@
 
 
 // home
+// Función para precargar las imágenes de fondo del carrusel
+function preloadImages() {
+  const slides = document.querySelectorAll(".slide");
+  slides.forEach(slide => {
+      const backgroundImage = getComputedStyle(slide).backgroundImage;
+      if (backgroundImage && backgroundImage !== "none") {
+          const imageUrl = backgroundImage.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+          const img = new Image();
+          img.src = imageUrl;
+      }
+  });
+}
+
+// Llamar a la función para precargar las imágenes al cargar la página
+window.addEventListener("load", preloadImages);
+
+// Llamar a la función para precargar las imágenes al cargar la página
+window.addEventListener("load", preloadImages);
 
 const slides = document.querySelector(".slider").children;
 const prev = document.querySelector(".prev");

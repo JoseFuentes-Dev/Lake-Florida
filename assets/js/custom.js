@@ -2,12 +2,53 @@
 	
 	"use strict";
 
-	// Page loading animation
 	$(window).on('load', function() {
-
-        $('#js-preloader').addClass('loaded');
-
-    });
+		// Page loading animation
+		$('#js-preloader').addClass('loaded');
+	
+		// Función para pre-cargar todos los archivos de la página
+		function preload() {
+			// Array para almacenar los elementos a cargar
+			var elementsToLoad = [];
+	
+			// Agregar elementos como imágenes, scripts, hojas de estilo, etc., a la matriz elementsToLoad
+			// Ejemplo: imágenes
+			$('img').each(function() {
+				elementsToLoad.push($(this).attr('src'));
+			});
+	
+			// Ejemplo: scripts
+			$('script').each(function() {
+				elementsToLoad.push($(this).attr('src'));
+			});
+	
+			// Ejemplo: hojas de estilo
+			$('link[rel="owl.css"]').each(function() {
+				elementsToLoad.push($(this).attr('href'));
+			});
+	
+			// Contador para realizar un seguimiento de los elementos cargados
+			var loadedCount = 0;
+	
+			// Función para verificar si todos los elementos han sido cargados
+			function checkLoaded() {
+				loadedCount++;
+				// Si todos los elementos han sido cargados, mostrar la página
+				if (loadedCount === elementsToLoad.length) {
+					$('#js-preloader').addClass('loaded');
+				}
+			}
+	
+			// Agregar evento 'load' a cada elemento a cargar
+			elementsToLoad.forEach(function(src) {
+				$('<img>').on('load', checkLoaded).attr('src', src);
+			});
+		}
+	
+		// Llamar a la función preload para iniciar la precarga de archivos
+		preload();
+	});
+	
 
 
 	$(document).ready(function() {
