@@ -704,8 +704,8 @@ Pool Style
 
 .pool .left-image  {
 background-image: url('../images/piscinas/Piscina-section/2.jpg');
-background-position: center;
-background-size: cover;
+background-position:center;
+background-size:cover;
  aspect-ratio: 9/16;
  
  height: 650px;
@@ -1356,6 +1356,7 @@ body {
  
   height: 300px;
   width: 100%;
+  
 }
 .slider-container .slider-spa{
   height: 300px;
