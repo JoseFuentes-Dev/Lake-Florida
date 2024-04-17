@@ -272,7 +272,7 @@ padding: 20px 50px 0 50px;
 }
 .sub-header {
   position: sticky;
-  background-color: #ffb201;
+  background-color: #e59a22;
   border-bottom: 1px solid #eee;
   z-index: 400;
   transition: transform .6s ease;
@@ -284,8 +284,16 @@ padding: 20px 50px 0 50px;
 
 .sub-header ul li {
   display: inline-block;
+ 
 }
-
+.sub-header ul li i{
+ cursor: pointer;
+ 
+}
+.sub-header ul li a:hover {
+  
+ color: #0071f8;
+}
 .sub-header ul.social-links {
   text-align: right;
 }
@@ -301,10 +309,13 @@ padding: 20px 50px 0 50px;
   background-color: #cdcdcd;
   border-radius: 50%;
   text-align: center;
-  line-height: 30px;
-  color: #fff;
-  font-size: 14px;
   
+  color: #fff ;
+  font-size: 20px;
+  
+}
+.sub-header ul li a{
+  color: #fff;
 }
 
 .sub-header ul.social-links li a:hover {
@@ -312,8 +323,8 @@ padding: 20px 50px 0 50px;
 }
 
 .sub-header ul.info li {
-  font-size: 14px;
-  color: #000;
+  font-size: 18px;
+  color: #fff;
   border-right: 1px solid #eee;
   margin-right: 25px;
   padding-right: 25px;
@@ -326,8 +337,8 @@ padding: 20px 50px 0 50px;
 }
 
 .sub-header ul.info li i {
-  font-size: 20px;
-  color: #40a4f9;
+  font-size: 25px;
+  color: #fff;
   margin-right: 8px;
 }
 .container-header{
