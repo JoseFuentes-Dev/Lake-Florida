@@ -713,11 +713,12 @@ background-size: cover;
   .container-pool{
     flex-direction: column;
   }
-.pool .left-image{
+.pool .left-image  {
   background-position: bottom;
-  height: 400px; 
-  background-size: contain;
-}
+  aspect-ratio: 16/9;
+  height: 400px;
+  
+ }
 }
 
 .section-heading {
@@ -1349,6 +1350,8 @@ body {
 .slider-container .slider-spa{
   height: 300px;
 }
+
+.pool
   .carousel-control-nextt,
   .carousel-control-preview{
 display: none;
@@ -1426,6 +1429,7 @@ display: none;
   .pool-image-fixed .counter {
     margin-bottom: 45px;
   }
+  
   .spa{
     flex-direction: column;
   }
