@@ -726,7 +726,6 @@ background-size: cover;
   }
 .pool .left-image  {
   background-position: bottom;
-  aspect-ratio: 16/9;
   height: 400px;
   
  }
@@ -1361,6 +1360,7 @@ body {
 .container-pool .left-image{
  
   height: 300px;
+  width: 100%;
 }
 .slider-container .slider-spa{
   height: 300px;
