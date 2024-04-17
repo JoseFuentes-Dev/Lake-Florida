@@ -211,7 +211,7 @@ $(document).ready(function() {
     }
 
     function startSlider() {
-        interval = setInterval(nextSlide, 3000); // Cambia de slide cada 3 segundos
+        interval = setInterval(nextSlide, 5000); // Cambia de slide cada 5 segundos
     }
 
     function stopSlider() {

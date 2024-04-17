@@ -963,10 +963,11 @@ Spa Styles
   display: inline-block;
   margin: 0 5px;
   cursor: pointer;
+  border: 1px solid #fff;
 }
 
 .dot-spa.active {
-  background-color: #333;
+  background-color: #ffb201;
 }
 
 
