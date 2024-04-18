@@ -1487,15 +1487,25 @@ resize: none;
   width: 350px;
 }
 
+
  }
  @media (max-width:420px){
   .container-item .phone, .email{
-    width: 300px;
+    width: 320px;
    
   }
   .container-item h6{
     font-size: 11px;
     }
+}
+@media (max-width:392px){
+  footer{
+    margin-top: 90%;
+  }
+  #contact-form{
+    top: 120%;
+    height: 550px ;
+  }
 }
  
 
