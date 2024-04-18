@@ -1604,7 +1604,9 @@ Responsive Style
 body {
   overflow-x: hidden;
 }
-
+.container3 .follow{
+  margin-top: 40px;
+}
 }
 @media (max-width: 805px) {
  
