@@ -1262,11 +1262,13 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
 }
 @media (max-width: 380px) {
 body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
-  height: 250px;
+  height: 270px;
   
 }
+.mobile-menu-arrow {
+  bottom: 25px;
 }
-
+}
 /* 
 ---------------------------------------------
 Contact Style
