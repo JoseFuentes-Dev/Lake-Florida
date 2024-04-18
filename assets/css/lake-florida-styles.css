@@ -1260,6 +1260,12 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
     font-size: 50px;
 }
 }
+@media (max-width: 380px) {
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
+  height: 250px;
+  
+}
+}
 
 /* 
 ---------------------------------------------
