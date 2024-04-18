@@ -48,3 +48,18 @@ function typeWriter(text, elementId, speed) {
   };
 
   
+//<!--********************************************-->
+//<!-- ***** Developers***** -->
+//  <!--Jose Arabel Fuentes Perez
+//  contact:
+//     mail> jocfuentes94@gmail.com
+//     github> Jose-Fuentes-Dev
+//  -->
+//  <!--Claudio Benjamin Osorio
+//  contact:
+//     mail> 
+//     github> 
+//  -->
+//  <!-- ***** Developers***** -->
+//  <!--********************************************-->
+  

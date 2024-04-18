@@ -1,5 +1,5 @@
 
-
+/*Carousel Styles*/
   .home {
     margin-top: 1rem;
     height: 85vh;
@@ -24,6 +24,7 @@
     .home .slide.active {
     display: flex;
     }
+    /*Efects scale +*/
     @keyframes slide {
     0% {
       transform: scale(1.1);
@@ -56,7 +57,7 @@
     animation: captionText 0.5s ease forwards;
     }
     
-    
+    /*Efect text slide*/
     @keyframes captionText {
     0% {
       opacity: 0;
@@ -67,7 +68,7 @@
       transform: translateX(0px);
     }
     }
-    
+    /*Controls*/
     .home .controls .prev,
     .home .controls .next {
     position: absolute;
@@ -117,9 +118,7 @@
     text-align: center;
     line-height: 25px;
     margin: 0 3px;
-    }
-   
-    
+    } 
     .home .indicator div.active {
       background-color: #ffb201;
     }
@@ -128,12 +127,9 @@
     @media (max-width: 767px) {
       .header-area .main-nav .logo img {
         width: 185px;
-       
        }
       .background-header .main-nav .logo img {
-
         width: 150px;
-       
       }
     .controls {
       display: none;
@@ -144,19 +140,31 @@
     .home .caption h1 {
       font-size: 30px;
     }
- 
     }
-     @media (max-width: 440px) {
-      
+     @media (max-width: 440px) {  
     .home .caption h1 {
       font-size: 25px;
     }
- 
     }
     @media (min-width: 1300px){
       .home .caption h1{
         font-size: 70px;
       }
     }
-    /* home */
+    /*
+<!--********************************************-->
+<!-- ***** Developers***** -->
+  <!--Jose Arabel Fuentes Perez
+  contact:
+     mail> jocfuentes94@gmail.com
+     github> Jose-Fuentes-Dev
+  -->
+  <!--Claudio Benjamin Osorio
+  contact:
+     mail> 
+     github> 
+  -->
+  <!-- ***** Developers***** -->
+  <!--********************************************-->
   
+*/

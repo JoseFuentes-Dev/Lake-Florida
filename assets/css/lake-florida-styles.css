@@ -575,7 +575,6 @@ padding: 20px 50px 0 50px;
   
   
   .background-header .main-nav {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
     border-radius: 0px 0px 25px 25px;
     width: 100%;
     z-index: 1;
@@ -712,20 +711,8 @@ background-size:cover;
 }
 .info-pool{
  width: 100%;
+
 }
-
-
-@media (max-width: 992px) {
-  .container-pool{
-    flex-direction: column;
-  }
-.pool .left-image  {
-  background-position: bottom;
-  height: 400px;
-  
- }
-}
-
 .section-heading {
   margin-left: 10px;
   margin-right: 10px;
@@ -805,6 +792,27 @@ background-size:cover;
   font-size: 22px;
   font-weight: 600;
 }
+/*Responsive*/
+
+@media (max-width: 992px) {
+  .container-pool{
+    flex-direction: column;
+  }
+.pool .left-image  {
+  background-position: bottom;
+  height: 400px;
+  
+ }
+}
+@media (max-width: 579px) {
+  .container-pool .left-image{
+ 
+    height: 300px;
+    width: 100%;
+    
+  }
+}
+
 
 
 /* 
@@ -834,9 +842,23 @@ image-fixed Style
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
-
-
+/*Responsive*/
+@media (max-width: 992px) {
+  .image-fixed h2 {
+    font-size: 60px; 
+  }
+}
+@media (max-width: 767px) {
+  .image-fixed h2 {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1200px) {
+  .image-fixed h2 {
+    font-size: 60px;
+    
+  } 
+}
 
 /* 
 ---------------------------------------------
@@ -879,6 +901,25 @@ Pool-Image-Fixed Style
   font-size: 13px;
   color: #1e1e1e;
   font-weight: 600;
+}
+/*Responsive*/
+@media (max-width: 992px) {
+  .pool .section-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 100px;
+  }
+  .pool .accordion {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .pool .info-table {
+    margin-top: 45px;
+  }
+  .pool-image-fixed .counter {
+    margin-bottom: 45px;
+  }
+  
 }
 /* 
 ---------------------------------------------
@@ -973,7 +1014,37 @@ Spa Styles
 .dot-spa.active {
   background-color: #ffb201;
 }
-
+/*Responsive*/
+@media (max-width: 992px) {
+  .spa{
+    flex-direction: column;
+  }
+ 
+  .slider-spa{
+    aspect-ratio: 16/9;
+    height: 650px;
+   
+  }
+  
+  .spa .section-heading {
+    margin-left: 0px;
+    margin-right: 0px;
+   
+  }
+  .spa .accordion {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  .spa-image-fixed .counter {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 579px) {
+  .slider-container .slider-spa{
+    height: 300px;
+  }
+}
 
 /* 
 ---------------------------------------------
@@ -1169,13 +1240,31 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
 .mobile-menu-arrow{
   display: none;
 }
-
+/*Responsive*/
 @media only screen and (max-width: 1200px) {
   body .testimonial .row .tabs {
     margin-right: 25px;
   }
 }
-
+@media (max-width: 767px) {
+  .carousel-control-nextt{
+    right: -12px;
+   }
+}
+@media (max-width: 579px) {
+  .carousel-control-nextt,
+  .carousel-control-preview{
+   display: none;
+ 
+  }
+  .mobile-menu-arrow {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+}
+}
 
 /* 
 ---------------------------------------------
@@ -1310,7 +1399,7 @@ resize: none;
   color: #fff;
  }
 
-
+/*Responsive*/
  @media (min-width:1331px){
   .container-left{
     margin-left: 50px;
@@ -1469,70 +1558,27 @@ Responsive Style
 body {
   overflow-x: hidden;
 }
-.container-pool .left-image{
- 
-  height: 300px;
-  width: 100%;
-  
-}
-.slider-container .slider-spa{
-  height: 300px;
-}
-
-
-  .carousel-control-nextt,
-  .carousel-control-preview{
-display: none;
- 
-  }
-  .mobile-menu-arrow {
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    font-size: 50px;
-}
-
-
 
 }
 @media (max-width: 767px) {
  
-  .carousel-control-nextt{
-
-   right: -12px;
- 
-  }
   .container3{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
   }
-  .image-fixed h2 {
-    
-    font-size: 60px;
-    
-  }
-
   
-  .header-area .main-nav .nav li:last-child {
-    display: none;
-  }
 }
 
 @media (max-width: 992px) {
   
-  .image-fixed h2 {
-    font-size: 60px;
-    
-  }
+  
   .header-area .main-nav .logo img {
     width: 223px;
   }
   .background-header .main-nav .logo img {
-    width: 154px;
-   
+    width: 154px; 
   }
   
   .header-area .main-nav .nav li a {
@@ -1543,59 +1589,9 @@ display: none;
     padding-right: 15px;
   }
   
-  .pool .section-heading {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 100px;
-  }
-  .pool .accordion {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  .pool .info-table {
-    margin-top: 45px;
-  }
-  .pool-image-fixed .counter {
-    margin-bottom: 45px;
-  }
-  
-  .spa{
-    flex-direction: column;
-  }
- 
-  .slider-spa{
-    aspect-ratio: 16/9;
-    height: 650px;
    
-  }
-  
-  .spa .section-heading {
-    margin-left: 0px;
-    margin-right: 0px;
-   
-  }
-  .spa .accordion {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  
-  .spa-image-fixed .counter {
-    margin-bottom: 45px;
-  }
-  
-  
-  
-  
 }
 
-@media (max-width: 1200px) {
-  .image-fixed h2 {
-    font-size: 60px;
-    
-  }
- 
-  
-}
 
 /*mayor 1500px*/
 @media (min-width: 1500px) {
@@ -1603,5 +1599,21 @@ display: none;
 }
 
 
-
+ /*
+<!--********************************************-->
+<!-- ***** Developers***** -->
+  <!--Jose Arabel Fuentes Perez
+  contact:
+     mail> jocfuentes94@gmail.com
+     github> Jose-Fuentes-Dev
+  -->
+  <!--Claudio Benjamin Osorio
+  contact:
+     mail> 
+     github> 
+  -->
+  <!-- ***** Developers***** -->
+  <!--********************************************-->
+  
+*/
 

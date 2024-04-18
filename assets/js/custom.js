@@ -89,6 +89,11 @@
 			$(this).toggleClass('active');
 			$('.header-area .nav').slideToggle(200);
 		});
+        $(".nav").on('click', function() {	
+			$(this).toggleClass('active');
+			$('.header-area .nav').slideToggle(200);
+		});
+
 	}
 
 
@@ -291,11 +296,20 @@ $(document).ready(function() {
 
 
 
-
-//correo form
-
-
-  
+//<!--********************************************-->
+//<!-- ***** Developers***** -->
+//  <!--Jose Arabel Fuentes Perez
+//  contact:
+//     mail> jocfuentes94@gmail.com
+//     github> Jose-Fuentes-Dev
+//  -->
+//  <!--Claudio Benjamin Osorio
+//  contact:
+//     mail> 
+//     github> 
+//  -->
+//  <!-- ***** Developers***** -->
+//  <!--********************************************-->
 
 
 
