@@ -85,16 +85,21 @@
 
 	// Menu Dropdown Toggle
 	if($('.menu-trigger').length){
-		$(".menu-trigger").on('click', function() {	
-			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
-		});
-        $(".nav").on('click', function() {	
-			$(this).toggleClass('active');
-			$('.header-area .nav').slideToggle(200);
-		});
-
-	}
+        $(".menu-trigger").on('click', function() {    
+            $(this).toggleClass('active');
+            $('.header-area .nav').slideToggle(200);
+        });
+    
+        var mobileNav = window.matchMedia("(max-width: 768px)");
+    
+        if (mobileNav.matches) {
+            $(".nav").on('click', function() {    
+                $(this).toggleClass('active');
+                $('.header-area .nav').slideToggle(200);
+            });
+        }
+    }
+    
 
 
 	// Menu elevator animation
