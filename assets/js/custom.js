@@ -84,7 +84,7 @@
 
 
 	// Menu Dropdown Toggle
-	if($('.menu-trigger').length){
+    if ($('.menu-trigger').length) {
         $(".menu-trigger").on('click', function() {    
             $(this).toggleClass('active');
             $('.header-area .nav').slideToggle(200);
@@ -96,6 +96,7 @@
             $(".nav").on('click', function() {    
                 $(this).toggleClass('active');
                 $('.header-area .nav').slideToggle(200);
+                $(".menu-trigger").removeClass('active'); // Aquí removemos la clase active del menu-trigger
             });
         }
     }
@@ -111,6 +112,7 @@
 				let width = $(window).width();
 				if(width < 100) {
 					$('.menu-trigger').removeClass('active');
+                    $('.menu-trigger').removeClass('active');
 					
 				}				
 				$('html,body').animate({
