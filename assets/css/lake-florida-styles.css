@@ -720,12 +720,16 @@ background-size:cover;
   --bs-accordion-border-radius: 10px;
   --bs-accordion-inner-border-radius: 10px;
   --bs-accordion-bg: #fff;
-  --bs-accordion-border-color: none;
+  --bs-accordion-border-color: #fff;
   border: none !important;
 }
 
 .pool .accordion-header {
-  border-bottom: 1px solid #eaeaea;
+  
+  --bs-accordion-btn-bg: #fff;
+  background-color: #fff;
+  --bs-accordion-active-bg: #fff;
+  --bs-accordion-active-color: #fff;
 }
 
 .pool .accordion-button {
@@ -743,7 +747,7 @@ background-size:cover;
 
 .pool .accordion-button:not(.collapsed) {
   color: #40a4f9;
-  background-color: #fafafa;
+  background-color: #fff;
   outline: none;
 }
 
@@ -951,7 +955,7 @@ Spa Styles
 
 .spa .accordion-button:not(.collapsed) {
   color: #40a4f9;
-  background-color: #fafafa;
+  background-color: #fff;
   outline: none;
 }
 
@@ -960,6 +964,13 @@ Spa Styles
   justify-content: center;
   padding: 30px;
 }
+.spa .accordion-header {
+  --bs-accordion-btn-bg: #fff;
+  background-color: #fff;
+  --bs-accordion-active-bg: #fff;
+  --bs-accordion-active-color: #fff;
+}
+
 
 .slider-container {
   position: relative;
