@@ -963,6 +963,7 @@ Spa Styles
   display: flex;
   justify-content: center;
   padding: 30px;
+  
 }
 .spa .accordion-header {
   --bs-accordion-btn-bg: #fff;
@@ -1024,6 +1025,7 @@ Spa Styles
 @media (max-width: 992px) {
   .spa{
     flex-direction: column;
+    gap: 30px;
   }
  
   .slider-spa{
