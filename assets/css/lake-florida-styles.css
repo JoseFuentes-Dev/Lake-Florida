@@ -719,7 +719,7 @@ background-size:cover;
   margin-right: 10px;
   --bs-accordion-border-radius: 10px;
   --bs-accordion-inner-border-radius: 10px;
-  --bs-accordion-bg: #fafafa;
+  --bs-accordion-bg: #fff;
   --bs-accordion-border-color: none;
   border: none !important;
 }
