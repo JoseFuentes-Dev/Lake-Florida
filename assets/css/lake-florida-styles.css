@@ -1059,6 +1059,9 @@ Spa Styles
   .accordion-body{
     padding: 0;
   }
+  .spa .accordion-button-item{
+    font-size: 15px;
+  }
 }
 
 /* 
