@@ -130,6 +130,10 @@
       .background-header .main-nav .logo img {
         width: 96px;
       }
+      .main-nav .logo img.small{
+       
+        width: 88px;
+        }
     .controls {
       display: none;
     }

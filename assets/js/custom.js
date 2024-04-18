@@ -340,6 +340,44 @@ accordionItems.forEach(function(item) {
 });
 
 
+//Icono small cuando tocas el boton
+// Seleccionar elementos relevantes
+var menuTrigger = document.querySelector('.menu-trigger');
+var logo = document.getElementById('logo');
+var nav = document.querySelector('.nav');
+
+// Función para agregar o quitar la clase 'small' al logo
+function toggleLogoClass() {
+    // Verificar si el menú de navegación está visible
+    var navDisplay = window.getComputedStyle(nav).getPropertyValue('display');
+    
+    // Alternar clase 'small' en el logo dependiendo del estado del menú
+    if (navDisplay === 'block') {
+        // Si el menú está visible, hacer el logo pequeño
+        logo.classList.add('small');
+    } else {
+        // Si el menú está oculto, hacer el logo de tamaño normal
+        logo.classList.remove('small');
+    }
+}
+
+// Agregar controlador de evento al menú de navegación
+menuTrigger.addEventListener('click', toggleLogoClass);
+
+// Monitorear cambios en el estado del menú y ajustar la clase del logo
+var observer = new MutationObserver(function(mutationsList) {
+    for(var mutation of mutationsList) {
+        if (mutation.attributeName === 'style') {
+            toggleLogoClass();
+            break;
+        }
+    }
+});
+
+observer.observe(nav, { attributes: true });
+
+
+
 
 
 
