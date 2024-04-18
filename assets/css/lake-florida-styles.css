@@ -1040,6 +1040,11 @@ Spa Styles
     height: 300px;
   }
 }
+@media (max-width: 380px) {
+  .accordion-body{
+    padding: 0;
+  }
+}
 
 /* 
 ---------------------------------------------
