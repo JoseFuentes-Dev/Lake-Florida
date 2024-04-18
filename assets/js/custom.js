@@ -145,55 +145,31 @@
 })(window.jQuery);
 
 
+function updatePageSection() {
+    var currentScroll = window.pageYOffset;
 
+    var sections = document.querySelectorAll('.nav a[href^="#"]');
+    sections.forEach(function(section) {
+        var target = document.querySelector(section.getAttribute('href'));
+        var top = target.offsetTop - 100; // Ajuste para tener en cuenta el espacio de la barra de navegación
 
-// Función para cambiar el estado activo del enlace
-function setActiveLink(navLink) {
-    document.querySelectorAll('a.active').forEach(function(link) {
-        link.classList.remove('active');
+        if (currentScroll >= top && currentScroll < top + target.offsetHeight) {
+            // Agregar clase 'active' al enlace correspondiente
+            section.classList.add('active');
+        } else {
+            // Eliminar clase 'active' del enlace si no está en la sección visible
+            section.classList.remove('active');
+        }
     });
-    navLink.classList.add('active');
 }
 
-// Agregar controladores de eventos a los enlaces
-document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        var targetId = this.getAttribute('href').substring(1);
-        var targetDiv = document.getElementById(targetId);
-        var navLink = document.querySelector('a[href="#' + targetId + '"]');
+// Llamar a la función cuando se desplaza la página
+window.addEventListener('scroll', updatePageSection);
 
-        // Cambiar el estado activo del enlace al que se hizo clic
-        setActiveLink(navLink);
+// Llamar a la función cuando se carga la página
+window.addEventListener('load', updatePageSection);
 
-        // Desplazar la ventana para mostrar la sección correspondiente
-        if (targetDiv) {
-            window.scrollTo({
-                top: targetDiv.offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
 
-// Controlador de evento scroll
-window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY;
-    var divs = document.querySelectorAll('[id]');
-
-    divs.forEach(function(div) {
-        var divTop = div.offsetTop;
-        var divHeight = div.clientHeight;
-        var id = div.getAttribute('id');
-
-        if (scrollPosition >= divTop && scrollPosition < divTop + divHeight) {
-            var navLink = document.querySelector('a[href="#' + id + '"]');
-            if (navLink) {
-                setActiveLink(navLink);
-            }
-        }
-    });
-});
 
 
 //Testimonials section
