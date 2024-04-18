@@ -137,34 +137,53 @@
 
 
 
-	window.addEventListener('scroll', function() {
-		var scrollPosition = window.scrollY;
+// Función para cambiar el estado activo del enlace
+function setActiveLink(navLink) {
+    document.querySelectorAll('a.active').forEach(function(link) {
+        link.classList.remove('active');
+    });
+    navLink.classList.add('active');
+}
 
-		// Obtener todos los divs con un id
-		var divs = document.querySelectorAll('[id]');
+// Agregar controladores de eventos a los enlaces
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        var targetId = this.getAttribute('href').substring(1);
+        var targetDiv = document.getElementById(targetId);
+        var navLink = document.querySelector('a[href="#' + targetId + '"]');
 
-		var activeLink = document.querySelector('a.active');
-		
-		// Iterar sobre cada div para verificar si está en la pantalla
-		divs.forEach(function(div) {
-			var divTop = div.offsetTop;
-			var divHeight = div.clientHeight;
-			var id = div.getAttribute('id');
+        // Cambiar el estado activo del enlace al que se hizo clic
+        setActiveLink(navLink);
 
-			if (scrollPosition >= divTop && scrollPosition < divTop + divHeight) {
-				// Si el div está en la pantalla, agregar la clase "active" al enlace correspondiente
-				var navLink = document.querySelector('a[href="#' + id + '"]');
-				if (navLink && !navLink.classList.contains('active')) {
-					// Eliminar la clase active del enlace anterior si existe
-					if (activeLink) {
-						activeLink.classList.remove('active');
-					}
-					navLink.classList.add('active');
-					activeLink = navLink;
-				}
-			}
-		});
-	});
+        // Desplazar la ventana para mostrar la sección correspondiente
+        if (targetDiv) {
+            window.scrollTo({
+                top: targetDiv.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Controlador de evento scroll
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var divs = document.querySelectorAll('[id]');
+
+    divs.forEach(function(div) {
+        var divTop = div.offsetTop;
+        var divHeight = div.clientHeight;
+        var id = div.getAttribute('id');
+
+        if (scrollPosition >= divTop && scrollPosition < divTop + divHeight) {
+            var navLink = document.querySelector('a[href="#' + id + '"]');
+            if (navLink) {
+                setActiveLink(navLink);
+            }
+        }
+    });
+});
 
 
 //Testimonials section

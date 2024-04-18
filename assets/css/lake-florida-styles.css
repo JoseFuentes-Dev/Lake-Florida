@@ -1221,6 +1221,10 @@ display: flex;
 flex-direction: column;
 gap:20px;
 }
+.container-item h6{
+font-size: 15px;
+padding-top: 15px;
+}
 .container-item .phone, .email{
   background-color: #fff;
   display: flex;
@@ -1389,7 +1393,17 @@ resize: none;
 #contact-form{
   width: 350px;
 }
+
  }
+ @media (max-width:420px){
+  .container-item .phone, .email{
+    width: 300px;
+   
+  }
+  .container-item h6{
+    font-size: 11px;
+    }
+}
  
 
 /* 
