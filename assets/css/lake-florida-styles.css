@@ -116,10 +116,7 @@ img {
 Global Styles
 --------------------------------------------- 
 */
-html,
-body {
-  font-family: 'Poppins', sans-serif;
-}
+
 
 ::selection {
   background: #0071f8;
@@ -268,7 +265,7 @@ Header Style
 */
 
 .container-sub-header{
-padding: 20px 50px 0 50px;
+padding: 20px 50px 20px 50px;
 }
 .sub-header {
   position: sticky;
