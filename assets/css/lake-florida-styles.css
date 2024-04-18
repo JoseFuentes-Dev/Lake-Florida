@@ -1310,16 +1310,19 @@ display: flex;
 flex-direction: column;
 gap:20px;
 }
+
 .container-item h6{
 font-size: 15px;
 padding-top: 15px;
+font-weight: 500;
 }
+
 .container-item .phone, .email{
   background-color: #fff;
   display: flex;
   gap: 20px;
   padding: 20px;
-  width: 380px;
+  width: 400px;
   border-radius: 20px;
   box-shadow: 5px 6px 9px 0px #434343 ;
 }
@@ -1333,6 +1336,7 @@ padding-top: 15px;
 .email:hover{
   transform: translateY(-10px);
 }
+
 .phone,.email i{
 font-size: 3em;
 color: #40a4f9;

@@ -113,7 +113,7 @@ let timer = setInterval(autoPlay, 8000);
 //<!-- ***** Developers***** -->
 //  <!--Jose Arabel Fuentes Perez
 //  contact:
-//     github>
+//     github> https://github.com/JoseFuentes-Dev
 //  -->
 //  <!--Claudio Benjamin Osorio
 //  contact:
