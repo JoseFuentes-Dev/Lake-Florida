@@ -90,7 +90,7 @@
             $('.header-area .nav').slideToggle(200);
         });
     
-        var mobileNav = window.matchMedia("(max-width: 768px)");
+        var mobileNav = window.matchMedia("(max-width: 767px)");
     
         if (mobileNav.matches) {
             $(".nav").on('click', function() {    
