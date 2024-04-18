@@ -1545,7 +1545,10 @@ footer{
  background-repeat: no-repeat;
 }
 
-
+.link1{
+  display: flex;
+  flex-direction: column;
+}
 .container2{
   padding: 50px;
   
