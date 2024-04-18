@@ -1054,6 +1054,15 @@ Spa Styles
   .slider-container .slider-spa{
     height: 300px;
   }
+  .pool .section-heading{
+    margin-bottom: 40px;
+  }
+  .spa .section-heading h2{
+    margin-bottom: 40px;
+  }
+  .accordion{
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 380px) {
   .accordion-body{
