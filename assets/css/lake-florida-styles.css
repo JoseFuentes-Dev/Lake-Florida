@@ -1493,6 +1493,9 @@ resize: none;
     padding: 15px;
    width: 400px; 
   }
+  .links{
+    display: none !important;
+  }
  }
  @media (max-width:510px){
   .image-contact{
