@@ -52,13 +52,11 @@ function typeWriter(text, elementId, speed) {
 //<!-- ***** Developers***** -->
 //  <!--Jose Arabel Fuentes Perez
 //  contact:
-//     mail> jocfuentes94@gmail.com
-//     github> Jose-Fuentes-Dev
+//     github> https://github.com/JoseFuentes-Dev
 //  -->
 //  <!--Claudio Benjamin Osorio
 //  contact:
-//     mail> 
-//     github> 
+//     github> https://github.com/Claudio-Osorio/
 //  -->
 //  <!-- ***** Developers***** -->
 //  <!--********************************************-->
