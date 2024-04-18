@@ -573,7 +573,7 @@ padding: 20px 50px 20px 50px;
     height: 50px !important;
   }
   .background-header .main-nav {
-    border-radius: 0px 0px 25px 25px;
+    
     width: 100%;
     z-index: 1;
    
@@ -668,7 +668,10 @@ padding: 20px 50px 20px 50px;
     margin-top: 80px !important;
   }
   .background-header.header-sticky .nav {
-    margin-top: 80px !important;
+    margin-top: 48px !important;
+    margin-left: 70px !important;
+    border-radius: 0px 0px 25px 25px;
+    
   }
   .header-area .main-nav .nav li {
     width: 100%;
