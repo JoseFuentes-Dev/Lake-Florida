@@ -277,6 +277,75 @@ $(document).ready(function() {
 
 
 
+//spa change arrow direction
+// Variable para almacenar el estado anterior del acordeón
+var previousAccordion = null;
+
+// Agregar controladores de eventos a los botones dentro de los encabezados <h2>
+var accordionButtons = document.querySelectorAll('.accordion-header button');
+accordionButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Encontrar la flecha dentro del botón actual
+        var arrow = this.querySelector('i');
+
+        // Verificar si el acordeón está abierto o cerrado
+        var isOpen = this.getAttribute('aria-expanded') === 'true';
+
+        // Cambiar la dirección de la flecha
+        if (arrow) {
+            if (isOpen) {
+                arrow.classList.remove('fa-chevron-down');
+                arrow.classList.add('fa-chevron-up');
+            } else {
+                arrow.classList.remove('fa-chevron-up');
+                arrow.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Si hay un acordeón abierto anteriormente, cambiar su flecha a cerrada
+        if (previousAccordion && previousAccordion !== this) {
+            var previousArrow = previousAccordion.querySelector('button i');
+            if (previousArrow) {
+                previousArrow.classList.remove('fa-chevron-up');
+                previousArrow.classList.add('fa-chevron-down');
+            }
+        }
+
+        // Actualizar el acordeón anterior al actual
+        previousAccordion = this;
+    });
+});
+
+// Seleccionar todos los elementos .accordion-collapse
+var accordionItems = document.querySelectorAll('.accordion-collapse');
+
+// Iterar sobre cada elemento
+accordionItems.forEach(function(item) {
+    // Verificar si el elemento tiene la clase 'show'
+    if (item.classList.contains('show')) {
+        // Si tiene la clase 'show', seleccionar su botón correspondiente y cambiar el ícono a chevron-up
+        var button = item.parentNode.querySelector('.accordion-button-item i');
+        if (button) {
+            button.classList.remove('fa-chevron-down');
+            button.classList.add('fa-chevron-up');
+        }
+    } else {
+        // Si no tiene la clase 'show', seleccionar su botón correspondiente y cambiar el ícono a chevron-down
+        var button = item.parentNode.querySelector('.accordion-button-item i');
+        if (button) {
+            button.classList.remove('fa-chevron-up');
+            button.classList.add('fa-chevron-down');
+        }
+    }
+});
+
+
+
+
+
+
+
+
 //<!--********************************************-->
 //<!-- ***** Developers***** -->
 //  <!--Jose Arabel Fuentes Perez
