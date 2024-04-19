@@ -1055,7 +1055,7 @@ Spa Styles
     margin-bottom: 40px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .accordion-body{
     padding: 0;
   }
