@@ -1297,7 +1297,15 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
 }
 @media (max-width: 380px) {
 body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
-  height: 270px;
+  height: 260px;
+  
+}
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
+  font-size: 15px;
+}
+body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+ 
+  font-size: 18px;
   
 }
 .mobile-menu-arrow {
