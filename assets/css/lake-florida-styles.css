@@ -1524,6 +1524,7 @@ resize: none;
   #contact-form{
     padding: 15px;
    width: 400px; 
+   height: 550px;
   }
   .links{
     display: none !important;
