@@ -1312,7 +1312,7 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h
   bottom: 25px;
 }
 .allcontanct-container{
-  z-index: 100;
+  z-index: 50;
 }
 }
 /* 
