@@ -1564,6 +1564,12 @@ resize: none;
     height: 550px ;
   }
 }
+@media (max-width:380px){
+ 
+  #contact-form{
+    width: 300px;
+  }
+}
  
 
 /* 
