@@ -80,48 +80,10 @@
 	  });
 	  
 
+    
+
+
 	
-
-
-	// Menu Dropdown Toggle
-    if ($('.menu-trigger').length) {
-        $(".menu-trigger").on('click', function() {    
-            $(this).toggleClass('active');
-            $('.header-area .nav').slideToggle(200);
-        });
-    
-        var mobileNav = window.matchMedia("(max-width: 767px)");
-    
-        if (mobileNav.matches) {
-            $(".nav").on('click', function() {    
-                $(this).toggleClass('active');
-                $('.header-area .nav').slideToggle(200);
-                $(".menu-trigger").removeClass('active'); // Aquí removemos la clase active del menu-trigger
-            });
-        }
-    }
-    
-
-
-	// Menu elevator animation
-	$('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			let target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				let width = $(window).width();
-				if(width < 100) {
-					$('.menu-trigger').removeClass('active');
-                    $('.menu-trigger').removeClass('active');
-					
-				}				
-				$('html,body').animate({
-					scrollTop: (target.offset().top) - 80
-				}, 700);
-				return false;
-			}
-		}
-	});
 
 
 	// Page loading animation
@@ -231,7 +193,13 @@ $(document).ready(function() {
 });
 
 
-
+//toggle function 
+function toggleMenu(e) {
+    document.querySelector(".hamburger").classList.toggle("hamburger--active");
+  }
+  
+  document.querySelector(".hamburger").addEventListener("click", toggleMenu);
+  document.querySelector(".hamburger__menu-item").addEventListener("click", toggleMenu);
 //slider del spa
 
 $(document).ready(function() {
@@ -340,44 +308,6 @@ accordionItems.forEach(function(item) {
         }
     }
 });
-
-
-//Icono small cuando tocas el boton
-// Seleccionar elementos relevantes
-var menuTrigger = document.querySelector('.menu-trigger');
-var logo = document.getElementById('logo');
-var nav = document.querySelector('.nav');
-
-// Función para agregar o quitar la clase 'small' al logo
-function toggleLogoClass() {
-    // Verificar si el menú de navegación está visible
-    var navDisplay = window.getComputedStyle(nav).getPropertyValue('display');
-    
-    // Alternar clase 'small' en el logo dependiendo del estado del menú
-    if (navDisplay === 'block') {
-        // Si el menú está visible, hacer el logo pequeño
-        logo.classList.add('small');
-    } else {
-        // Si el menú está oculto, hacer el logo de tamaño normal
-        logo.classList.remove('small');
-    }
-}
-
-// Agregar controlador de evento al menú de navegación
-menuTrigger.addEventListener('click', toggleLogoClass);
-
-// Monitorear cambios en el estado del menú y ajustar la clase del logo
-var observer = new MutationObserver(function(mutationsList) {
-    for(var mutation of mutationsList) {
-        if (mutation.attributeName === 'style') {
-            toggleLogoClass();
-            break;
-        }
-    }
-});
-
-observer.observe(nav, { attributes: true });
-
 
 
 
