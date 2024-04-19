@@ -1076,7 +1076,13 @@ Spa Styles
     padding: 0;
   }
   .spa .accordion-button-item{
-    font-size: 15px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 308px) {
+ 
+  .spa .accordion-button-item{
+    font-size: 13px;
   }
 }
 
