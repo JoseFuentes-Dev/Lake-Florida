@@ -260,16 +260,7 @@ Pre-loader Style
 Header Style
 --------------------------------------------- 
 */
-.phone-top-mobile{
-  position: absolute;
-  right: 10%;
-  bottom: 20%;
-  font-size: 1.5rem;
- list-style: none;
-  color: #0071f8;
-  font-weight: 500;
-  display: none;
-}
+
 
 .container-sub-header{
 padding: 20px 50px 20px 50px;
@@ -575,9 +566,7 @@ padding: 20px 50px 20px 50px;
 }
 
 @media (max-width: 767px) {
-  .phone-top-mobile{
-    display: block;
-  }
+  
   .sub-header{
     display: none;
   }
@@ -1321,6 +1310,170 @@ body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
 }
 /* 
 ---------------------------------------------
+Call Style
+--------------------------------------------- 
+*/
+.cback {
+  width: 130px;
+  height:130px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+.cback-circle {
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+.cback-circle--phone {
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.cback-circle.fn1 {
+  -webkit-animation: pin 2.5s linear .4s infinite normal;
+          animation: pin 2.5s linear .4s infinite normal;
+}
+.cback-circle.fn2 {
+  -webkit-animation: pin 2s linear 0s infinite normal;
+          animation: pin 2s linear 0s infinite normal;
+  background: none;
+}
+.cback:hover .cback-circle--phone {
+  -webkit-animation: hvr-phone 1.5s linear infinite normal;
+          animation: hvr-phone 1.5s linear infinite normal;
+}
+.cback-circle {
+  background: #40a4f9;
+  color: #fff;
+}
+.cback .phone-icon {
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: phone-fn 2s infinite ease-in-out;
+          animation: phone-fn 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes phone-fn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  100%,50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+}
+
+@keyframes phone-fn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+  10% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  20% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(-25deg) scale(1) skew(1deg);
+  }
+  40% {
+    -webkit-transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(25deg) scale(1) skew(1deg);
+  }
+  100%,50% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+            transform: translate(-50%, -50%) rotate(0deg) scale(1) skew(1deg);
+  }
+}
+@-webkit-keyframes pin {
+  0% {
+    opacity: .6;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pin {
+  0% {
+    opacity: .6;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes hvr-phone {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
+  }
+}
+@keyframes hvr-phone {
+  0%, 100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    box-shadow: inset 0 0 20px -14px rgba(0, 0, 0, 0.75);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: inset 0 0 20px -4px rgba(0, 0, 0, 0.75);
+  }
+}
+
+/* 
+---------------------------------------------
 Contact Style
 --------------------------------------------- 
 */
@@ -1726,4 +1879,8 @@ body {
   <!--********************************************-->
   
 */
+
+
+
+
 
