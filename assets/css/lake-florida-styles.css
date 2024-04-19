@@ -477,6 +477,11 @@ padding: 20px 50px 20px 50px;
     font-size: 12px;
   }
 }
+@media (max-width: 790px) {
+  .header-area .main-nav .nav li a {
+    font-size: 11px;
+  }
+}
 @media (max-width: 767px) {
   
   .sub-header{
@@ -1055,12 +1060,12 @@ Spa Styles
     margin-bottom: 40px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 414px) {
   .accordion-body{
     padding: 0;
   }
   .spa .accordion-button-item{
-    font-size: 13px;
+    font-size: 13.5px;
   }
 }
 @media (max-width: 308px) {

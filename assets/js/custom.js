@@ -193,13 +193,15 @@ $(document).ready(function() {
 });
 
 
-//toggle function 
+//toggle-mobile function 
 function toggleMenu(e) {
     document.querySelector(".hamburger").classList.toggle("hamburger--active");
   }
   
   document.querySelector(".hamburger").addEventListener("click", toggleMenu);
   document.querySelector(".hamburger__menu-item").addEventListener("click", toggleMenu);
+
+
 //slider del spa
 
 $(document).ready(function() {
