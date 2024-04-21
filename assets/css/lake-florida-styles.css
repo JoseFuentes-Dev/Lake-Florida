@@ -478,6 +478,13 @@ padding: 20px 50px 20px 50px;
   padding: 0;
 }
 }
+@media (max-width: 1091px) {
+
+ .header-area .main-nav .nav li a{
+
+   padding-left: 0;
+ }
+}
 @media (max-width: 1028px) {
 
   .header-area .main-nav .nav li a{
@@ -486,12 +493,12 @@ padding: 20px 50px 20px 50px;
   }
 
 }
-@media (max-width: 855px) {
+@media (max-width: 886px) {
   .header-area .main-nav .nav li a {
     font-size: 14px;
   }
 }
-@media (max-width: 826px) {
+@media (max-width: 849px) {
   .header-area .main-nav .nav li a {
     font-size: 12px;
   }
