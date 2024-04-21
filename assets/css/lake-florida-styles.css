@@ -458,7 +458,13 @@ padding: 20px 50px 20px 50px;
 .visible{
   display:inline !important;
 }
+@media (max-width: 1302px) {
 
+  .container-header{
+    padding: 0;
+  }
+
+}
 @media (max-width: 1238px) {
 
   .header-area .main-nav .nav li {
@@ -478,7 +484,7 @@ padding: 20px 50px 20px 50px;
   padding: 0;
 }
 }
-@media (max-width: 1091px) {
+@media (max-width: 1092px) {
 
  .header-area .main-nav .nav li a{
 
