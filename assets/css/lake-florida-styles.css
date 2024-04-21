@@ -1236,16 +1236,16 @@ Financial Style
   }
 }
 
-
 /*Financing ico*/
 .financing-ico{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
-text-align: center;
 width: 90%;
 margin: 0 auto;
 }
+
 .container-financing-ico{
  
 display: flex;
@@ -1257,7 +1257,7 @@ gap: 15px;
   color: #003c7a;
 }
 .container-financing-ico a{
-  width: 300px;
+  width: 250px;
   padding: 5px;
   background-color: #fff;
   border-radius: 20px;
@@ -1272,14 +1272,17 @@ gap: 15px;
   width: 150px;
   height: 100%;
   }
-  @media (max-width: 750px) {
+
+  /*Responsive*/
+  @media (max-width: 1060px) {
     .container-financing-ico{
       flex-wrap: wrap;
     }
     .container-financing-ico a{
-     height: 60px;
-      }
+      height: 60px;
+       }
   }
+ 
 /* 
 ---------------------------------------------
 Testimonials Style
