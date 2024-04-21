@@ -1169,7 +1169,8 @@ Financial Style
 .btn-financial button:hover{
   background-color:#f74701; ;
 }
-@media (max-width: 740px) {
+
+@media (max-width: 798px) {
   .container-financial-all-inside{
    
     height: 700px;
@@ -1234,6 +1235,51 @@ Financial Style
     padding: 0;
   }
 }
+
+
+/*Financing ico*/
+.financing-ico{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+}
+.container-financing-ico{
+ 
+display: flex;
+gap: 15px;
+
+
+}
+.financing-ico h3{
+  color: #003c7a;
+}
+.container-financing-ico a{
+  width: 300px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 6px 6px 11px 0px #000000 ;
+  }
+  .container-financing-ico a:hover{
+    transform: translateY(-8px);
+    transition: all .7s ease;
+    }
+.container-financing-ico img{
+  width: 150px;
+  height: 100%;
+  }
+  @media (max-width: 750px) {
+    .container-financing-ico{
+      flex-wrap: wrap;
+    }
+    .container-financing-ico a{
+     height: 60px;
+      }
+  }
 /* 
 ---------------------------------------------
 Testimonials Style
