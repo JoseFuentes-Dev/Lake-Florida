@@ -204,6 +204,9 @@ function toggleMenu(e) {
 
 //slider del spa
 
+
+
+
 $(document).ready(function() {
     var slides = $(".slider-spa-img");
     var dotsContainer = $(".slider-dot-spa");
@@ -224,6 +227,7 @@ $(document).ready(function() {
         }
     });
 
+    // Función para mostrar una diapositiva específica
     function showSlide(index) {
         $(".slider-spa").css("transform", "translateX(-" + index * 100 + "%)");
         dotsContainer.find(".dot-spa").removeClass("active"); // Remover la clase "active" de todos los dots
@@ -231,21 +235,60 @@ $(document).ready(function() {
         currentSlide = index;
     }
 
+    // Función para avanzar a la siguiente diapositiva
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
     }
 
+    // Función para iniciar el carrusel
     function startSlider() {
         interval = setInterval(nextSlide, 5000); // Cambia de slide cada 5 segundos
     }
 
+    // Función para detener el carrusel
     function stopSlider() {
         clearInterval(interval);
     }
 
+    // Iniciar el carrusel al cargar la página
     startSlider();
+
+    // Agregar desplazamiento táctil (touch) al carrusel
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    $(".slider-spa").on("touchstart", function(event) {
+        touchStartX = event.changedTouches[0].clientX;
+    });
+
+    $(".slider-spa").on("touchend", function(event) {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            // Deslizar hacia la izquierda (siguiente diapositiva)
+            nextSlide();
+            resetTimer();
+        } else if (touchEndX > touchStartX) {
+            // Deslizar hacia la derecha (diapositiva anterior)
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+            resetTimer();
+        }
+    }
+
+    // Reiniciar el temporizador cada vez que se desplaza una foto con el dedo
+    function resetTimer() {
+        stopSlider();
+        startSlider();
+    }
 });
+
+
+
 
 
 
@@ -287,6 +330,12 @@ accordionButtons.forEach(function(button) {
         previousAccordion = this;
     });
 });
+
+
+  // Llamar a la función para añadir desplazamiento táctil al cargar la página
+  window.addEventListener("load", addTouchSwipe);
+  
+
 
 // Seleccionar todos los elementos .accordion-collapse
 var accordionItems = document.querySelectorAll('.accordion-collapse');
