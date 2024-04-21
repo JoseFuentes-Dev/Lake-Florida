@@ -190,7 +190,32 @@ $(document).ready(function() {
         autoChangeInterval = autoChange();
     }
 	
+	// Agregar desplazamiento táctil (touch) al carrusel
+    var touchStartX = 0;
+    var touchEndX = 0;
+
+    $("#carouselExampleIndicators").on("touchstart", function(event) {
+        touchStartX = event.changedTouches[0].clientX;
+    });
+
+    $("#carouselExampleIndicators").on("touchend", function(event) {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX) {
+            // Deslizar hacia la izquierda (siguiente diapositiva)
+            $('#carouselExampleIndicators').carousel('next');
+            resetTimer();
+        } else if (touchEndX > touchStartX) {
+            // Deslizar hacia la derecha (diapositiva anterior)
+            $('#carouselExampleIndicators').carousel('prev');
+            resetTimer();
+        }
+    }
 });
+
 
 
 //toggle-mobile function 
@@ -203,9 +228,6 @@ function toggleMenu(e) {
 
 
 //slider del spa
-
-
-
 
 $(document).ready(function() {
     var slides = $(".slider-spa-img");
