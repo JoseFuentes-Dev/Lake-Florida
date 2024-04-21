@@ -1114,6 +1114,7 @@ Financial Style
 */
 .financial-container{
   padding: 30px;
+ 
 }
 .financial-container h6{
    margin-bottom: 50px;
@@ -1295,6 +1296,7 @@ Financial Style
   gap: 50px;
 width: 90%;
 margin: 0 auto;
+margin-bottom: 100px;
 }
 
 .container-financing-ico{
