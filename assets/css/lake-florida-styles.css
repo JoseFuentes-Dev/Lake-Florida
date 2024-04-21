@@ -1197,6 +1197,12 @@ Financial Style
     line-height: 2em;
   }
 }
+@media (max-width: 572px) {
+  .container-financing-ico{
+     justify-content: center;
+    
+  }
+}
 @media (max-width: 496px) {
   .container-financial-all-inside{
    
