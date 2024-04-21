@@ -1187,7 +1187,7 @@ Financial Style
 @media (max-width: 496px) {
   .container-financial-all-inside{
    
-    height: 750px;
+    height: 750px !important;
     
   }
   
@@ -1196,7 +1196,7 @@ Financial Style
   
   .container-financial-all-inside{
    
-    height: 800px;
+    height: 800px !important;
     
   }
   .btn-financial button{
@@ -1226,13 +1226,16 @@ Financial Style
 }
 @media (max-width: 340px) {
   .container-financial-all-inside{
-    
-    height: 850px;
+     
+    height: 850px !important;
+
   }
 }
-@media (max-width: 320px) {
-  .financial-container .financial-body {
-    padding: 0;
+@media (max-width: 321px) {
+  .container-financial-all-inside{
+     
+    height: 900px !important;
+
   }
 }
 
@@ -1258,14 +1261,13 @@ Financial Style
     
   }
 }
-@media (max-width: 367px) {
+@media (max-width: 342px) {
   .es-con{
      
     height: 950px !important;
     
   }
 }
-
 /*Financing ico*/
 .financing-ico{
   display: flex;
