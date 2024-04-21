@@ -109,6 +109,49 @@ function autoPlay() {
 let timer = setInterval(autoPlay, 8000);
 
 
+
+
+
+// Función para añadir desplazamiento táctil al carrusel
+function addTouchSwipe() {
+  const carousel = document.querySelector(".slider");
+
+  carousel.addEventListener("touchstart", handleTouchStart, false);
+  carousel.addEventListener("touchmove", handleTouchMove, false);
+
+  let xDown = null;
+
+  function handleTouchStart(event) {
+    const firstTouch = event.touches[0];
+    xDown = firstTouch.clientX;
+  }
+
+  function handleTouchMove(event) {
+    if (!xDown) {
+      return;
+    }
+
+    let xUp = event.touches[0].clientX;
+    let xDiff = xDown - xUp;
+
+    if (xDiff > 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+
+    xDown = null;
+    updateCircleIndicator();
+    resetTimer();
+  }
+}
+
+// Llamar a la función para añadir desplazamiento táctil al cargar la página
+window.addEventListener("load", addTouchSwipe);
+
+
+
+
 //<!--********************************************-->
 //<!-- ***** Developers***** -->
 //  <!--Jose Arabel Fuentes Perez
